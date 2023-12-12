@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --light-blue: #F3F3F7;
+    --dark-blue: #26283B;
+    --red: #E13D4C;
+}
+
+body {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    max-width: 2560px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 16px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    color: var(--light-blue);
+    background-color: var(--red);
+    text-decoration: underline;
+    padding: 6px 16px;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    text-decoration: underline;
+}
+
+#nav-call {
+    background-color: #26283B;
+}
+
+/*Index.html*/
+#index-banner {
+    border: 4px solid red;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+}
+
+#index-one {
+    display: flex;
+    gap: 32px;
+}
+
+#reasons-container {
+    margin: 32px 0 16px 0;
+    display: grid;
+    grid-template: 150px / repeat(6, 1fr);
+    gap: 16px;
+}
+
+.reason {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.reason-text h4 {
+    text-align: center;
+}
+
+.reason-text p {
+    text-align: justify;
+}
+
+#reasons-container img {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+#index-three {
+    background-color: var(--dark-blue);
+    padding: 64px 0;
+    margin-bottom: 16px;
+}
+
+#index-three .page-container {
+    background-color: var(--light-blue);
+    padding: 16px;
+}
+
+#index-services-grid {
+    background-color: var(--light-blue);
+    display: grid;
+    grid-template: repeat(2, 200px) / repeat(5, 1fr);
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.is-block {
+    background-color: #AA4A44;
+    color: var(--light-blue);
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px outset #AA4A44;
+}
+
+.empty-block {
+    grid-column: span 1;
+}
+
+#index-ba-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.ba-image {
+    height: 500px;
+    width: 400px;
+    background-color: green;
+    border-radius: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ba-line {
+    height: 100%;
+    width: 8px;
+    background-color: var(--light-blue);
+}
+
+#makeover-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.mostep-box {
+    height: 300px;
+    width: 300px;
+    background-color: var(--dark-blue);
+    border-radius: 32px;
+}
+
+.mostep-image {
+    border-radius: 32px 32px 0 0;
+    height: 125px;
+    width: 100%;
+}
+
+.mostep-text {
+    color: var(--light-blue);
+    padding: 16px;
+    text-align: justify;
+}
+
+#index-six {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+}
+
+#index-six > h5 {
+    text-align: center;
+}
+
+#reviews-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+#reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 16px 0;
+}
+
+.review-box {
+    height: 400px;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 16px;
+    text-align: justify;
+    border-radius: 32px;
+}
+
+.stars {
+    color: var(--red);
+}
+
+#index-seven {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+}
+
+#contact-form {
+    height: 500px;
+    flex: 2;
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+}
+
+#contact-text {
+    flex: 3;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    padding: 32px 0;
+}
+
+footer > .page-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 2560px){
+    .page-container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 1440px){
+    .page-container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px){
+    .page-container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .page-container {
+        max-width: 425px;
+    }
+}
+
+@media (max-width: 425px){
+    .page-container {
+        max-width: 375px;
+    }
+}
+
+@media (max-width: 375px){
+    .page-container {
+        max-width: 320px;;
+    }
+}
+
+@media (max-width: 320px){
+
+}

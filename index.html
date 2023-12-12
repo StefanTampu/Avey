@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <head>
+    <header>
         <nav class="page-container">
             <div id="nav-logo"></div>
             <ul id="nav-links">
@@ -14,55 +15,71 @@
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Gallery</a></li>
-                <li><a href="">Call us</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href=""><button id="nav-call">Call us</button></a></li>
+                <li><a href=""><button id="nav-contact">Contact</button></a></li>
             </ul>
         </nav>
-        <div class="page-container banner" id="index-banner">
-            <h1>The Remodelling & Renovation Experts</h1>
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <button>Text</button>
+        <div class="page-container">
+            <div id="index-banner">
+                <h1>The Remodelling & Renovation Experts</h1>
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <button>Text</button>
+            </div>
         </div>
-    </head>
+    </header>
     <main>
         <div class="page-container" id="index-one">
             <img src="" alt="">
-            <h2>Home Remodelling & Renovation You Can Depend On</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Text</p>
+            <div id="i1-text">
+                <h2>Home Remodelling & Renovation You Can Depend On</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button>Text</button>
+            </div>
         </div>
         <div class="page-container" id="index-two">
             <h2>Why Choose Avey Construction?</h2>
             <div id="reasons-container">
                 <div class="reason">
                     <img src="" alt="">
-                    <h4>Quality Material</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="reason-text">
+                        <h4>Quality Material</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
                 <div class="reason">
                     <img src="" alt="">
-                    <h4>Accredited</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="reason-text">
+                        <h4>Accredited</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
                 <div class="reason">
                     <img src="" alt="">
-                    <h4>Trained Workers</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="reason-text">
+                        <h4>Trained Workers</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
                 <div class="reason">
                     <img src="" alt="">
-                    <h4>Time Availability</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="reason-text">
+                        <h4>Time Availability</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
                 <div class="reason">
                     <img src="" alt="">
-                    <h4>Quick Response</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="reason-text">
+                        <h4>Quick Response</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
                 <div class="reason">
                     <img src="" alt="">
-                    <h4>Two-Year Warranty</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="reason-text">
+                        <h4>Two-Year Warranty</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,10 +88,12 @@
                 <h2>Avey's Remodelling & Renovation Services</h2>
                 <h3>Lorem Ipsum Dolor Sit Amet</h3>
                 <div id="index-services-grid">
-                    <h4>Bathroom Remodelling</h4>
-                    <h4>Kitchen Remodelling</h4>
-                    <h4>Basement Finish</h4>
-                    <h4>Condo Renovation</h4>
+                    <div class="is-block"><h4>Bathroom Remodeling</h4></div>
+                    <div class="is-block"><h4>Kitchen Remodeling</h4></div>
+                    <div class="is-block empty-block"></div>
+                    <div class="is-block empty-block"></div>
+                    <div class="is-block"><h4>Basement Finish</h4></div>
+                    <div class="is-block"><h4>Condo Renovation</h4></div>
                 </div>
                 <button>Check out our services</button>
             </div>
@@ -134,32 +153,34 @@
                     </div>
                 </div>
         </div>
-        <div class="page-container" id="index-six">
-            <h2>Hear From Happy Avey Customers In The GTA</h2>
-            <h5>At Avey Construction, we take great pride in our commitment to excellence, delivering exceptional quality and service that consistently earns us praise and makes people say the nicest things about us.</h5>
-            <div id="reviews-section">
-                <div id="rev-left">
-                    <p>←</p>
-                </div>
-                <div id="reviews-container">
-                    <div class="review-box">
-                        <h4>Sarah T.</h4>
-                        <h5>&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div id="index-six">
+            <div class="page-container">
+                <h2>Hear From Happy Avey Customers In The GTA</h2>
+                <h5>At Avey Construction, we take great pride in our commitment to excellence, delivering exceptional quality and service that consistently earns us praise and makes people say the nicest things about us.</h5>
+                <div id="reviews-section">
+                    <div id="rev-left">
+                        <p>←</p>
                     </div>
-                    <div class="review-box">
-                        <h4>Lisa H.</h4>
-                        <h5>&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div id="reviews-container">
+                        <div class="review-box">
+                            <h4>Sarah T.</h4>
+                            <h5 class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="review-box">
+                            <h4>Lisa H.</h4>
+                            <h5 class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="review-box">
+                            <h4>John R.</h4>
+                            <h5 class="stars">&#9733;</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </div>
-                    <div class="review-box">
-                        <h4>John R.</h4>
-                        <h5>&#9733;</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div id="rev-right">
+                        <p>→</p>
                     </div>
-                </div>
-                <div id="rev-right">
-                    <p>→</p>
                 </div>
             </div>
         </div>
@@ -170,6 +191,7 @@
             <div id="contact-text">
                 <h2>Home Remodeling & Renovation in the GTA & More</h2>
                 <h3>Get In Touch For Your Next Home Project!</h3>
+                <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <br>
                 <h4>Email Us:</h4>
