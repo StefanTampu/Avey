@@ -51,6 +51,7 @@ table {
     --light-blue: #F3F3F7;
     --dark-blue: #26283B;
     --red: #E13D4C;
+    --brick-red: #AA4A44;
 }
 
 body {
@@ -66,7 +67,39 @@ body {
     margin-right: auto;
     padding-left: 32px;
     padding-right: 32px;
-    margin-bottom: 16px;
+    margin-bottom: 64px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 48px;
+    text-decoration: underline;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
 }
 
 h2, h3 {
@@ -76,9 +109,11 @@ h2, h3 {
 a {
     color: inherit;
     text-decoration: none;
+    font-size: 20px;
 }
 
 button {
+    font-size: 20px;
     color: var(--light-blue);
     background-color: var(--red);
     text-decoration: underline;
@@ -94,6 +129,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
+    margin-bottom: 16px;
 }
 
 #nav-links {
@@ -110,8 +146,13 @@ nav {
 
 /*Index.html*/
 #index-banner {
-    border: 4px solid red;
-    height: 500px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+#ibanner-text {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,20 +162,46 @@ nav {
 
 #index-one {
     display: flex;
+    justify-content: space-between;
     gap: 32px;
+    margin-bottom: 32px;
+}
+
+#index-one img {
+    height: 500px;
+    width: 35%;
+    background-color: green;
+}
+
+#i1-text {
+    width: 60%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 16px;
+}
+
+#i1-text h2 {
+    text-align: left;
+    margin-bottom: 16px;
 }
 
 #reasons-container {
-    margin: 32px 0 16px 0;
+    margin: 32px 0;
     display: grid;
-    grid-template: 150px / repeat(6, 1fr);
-    gap: 16px;
+    grid-template: repeat(2, 200px) / repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 64px;
 }
 
 .reason {
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: 16px;
+    padding: 16px;
+    border: 4px solid red;
 }
 
 .reason-text h4 {
@@ -152,39 +219,52 @@ nav {
 }
 
 #index-three {
-    background-color: var(--dark-blue);
-    padding: 64px 0;
-    margin-bottom: 16px;
-}
-
-#index-three .page-container {
-    background-color: var(--light-blue);
-    padding: 16px;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 #index-services-grid {
+    width: 100%;
     background-color: var(--light-blue);
     display: grid;
     grid-template: repeat(2, 200px) / repeat(5, 1fr);
     gap: 8px;
-    margin: 16px 0;
 }
 
 .is-block {
-    background-color: #AA4A44;
+    background-color: var(--red);
     color: var(--light-blue);
     grid-column: span 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 8px outset #AA4A44;
+    border: 8px outset var(--red);
+    cursor: pointer;
+}
+
+.is-block > h4 {
+    font-size: 27px;
+    text-decoration: none;
 }
 
 .empty-block {
     grid-column: span 1;
+    cursor: default;
+}
+
+#index-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #index-ba-container {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -216,15 +296,15 @@ nav {
 }
 
 .mostep-box {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 350px;
     background-color: var(--dark-blue);
     border-radius: 32px;
 }
 
 .mostep-image {
     border-radius: 32px 32px 0 0;
-    height: 125px;
+    height: 150px;
     width: 100%;
 }
 
@@ -237,10 +317,28 @@ nav {
 #index-six {
     background-color: var(--dark-blue);
     color: var(--light-blue);
+    padding: 48px 0;
+    margin: 64px 0;
+}
+
+#index-six > .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 #index-six > h5 {
     text-align: center;
+}
+
+.rev-arrow p {
+    font-size: 48px;
+    font-weight: 900;
+    cursor: pointer;
 }
 
 #reviews-section {
@@ -255,20 +353,27 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    padding: 16px 0;
+    padding: 16px 0 0 0;
 }
 
 .review-box {
-    height: 400px;
+    height: 300px;
     background-color: var(--light-blue);
     color: var(--dark-blue);
-    padding: 16px;
+    padding: 32px;
     text-align: justify;
     border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-box h4 {
+    font-size: 27px;
 }
 
 .stars {
     color: var(--red);
+    margin-top: 16px;
 }
 
 #index-seven {
@@ -283,26 +388,43 @@ nav {
     flex: 2;
     background-color: var(--dark-blue);
     color: var(--light-blue);
+    padding: 32px;
 }
 
 #contact-text {
     flex: 3;
+    text-align: justify;
+}
+
+#contact-text h2,
+#contact-text h3 {
+    text-align: left;
 }
 
 footer {
     background-color: var(--dark-blue);
     color: var(--light-blue);
-    padding: 32px 0;
 }
 
 footer > .page-container {
     display: flex;
     justify-content: space-between;
+    padding: 64px 0;
+    margin-bottom: 0;
 }
 
 .footer-group {
     display: flex;
     flex-direction: column;
+}
+
+.footer-group h3 {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.footer-group a {
+    margin-bottom: 8px;
 }
 
 @media (max-width: 2560px){
