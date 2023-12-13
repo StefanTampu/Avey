@@ -52,6 +52,7 @@ table {
     --dark-blue: #26283B;
     --middle-blue: hsl(234, 22%, 59%);
     --red: #E13D4C;
+    --light-red: hsl(355, 73%, 80%);
     --brick-red: #AA4A44;
 }
 
@@ -528,4 +529,94 @@ footer > .page-container {
     flex: 2;
     background-color: green;
     border: 8px outset var(--dark-blue);
+}
+
+/*Gallery.html*/
+
+#gallery-ba-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+#gallery-ba-container > div {
+    margin-bottom: 32px;
+}
+
+.gba-image {
+    height: 400px;
+    width: 700px;
+    background-color: green;
+    border-radius: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+#gallery-two {
+    padding: 100px 0 0 0;
+    position: relative;
+}
+
+#pictures-container {
+    display: grid;
+    grid-template: repeat(2, 300px) / repeat(2, 300px);
+    align-content: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.picture {
+    height: 300px;
+    width: 300px;
+}
+
+#p1 {
+    background-color: var(--red);
+    z-index: 2;
+    transform: rotate(-17deg) translate(-50px, 0) ;
+}
+
+#p2 {
+    background-color: yellow;
+    z-index: 1;
+    transform: rotate(17deg) translate(-125px, -10px);
+}
+
+#p3 {
+    background-color: var(--dark-blue);
+    z-index: 3;
+    transform: rotate(7deg) translate(-75px, -25px);
+}
+
+#p4 {
+    background-color: var(--middle-blue);
+    z-index: 4;
+    transform: translate(-125px, -45px) rotate(82deg);
+}
+
+#gallery-button {
+    position: absolute;
+    right: 75px;
+    top: 50%;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    text-decoration: none;
+    box-shadow: 8px 8px 24px 0 var(--light-red);
+    border: 8px outset var(--red);
+    transition: 500ms ease;
+}
+
+#gallery-button span {
+    text-decoration: underline;
+}
+
+#gallery-button:hover {
+box-shadow: none;
+border: 0px outset var(--light-red);
 }
