@@ -439,6 +439,12 @@ header .logo-container {
     border: 8px outset var(--dark-blue);
 }
 
+fieldset {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
 #contact-text {
     flex: 3;
     text-align: justify;
