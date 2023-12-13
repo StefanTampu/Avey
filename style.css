@@ -84,11 +84,13 @@ h2 {
     text-decoration: underline;
     font-weight: 800;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 h3 {
     font-size: 34px;
     font-weight: 800;
+    text-align: center;
 }
 
 h4 {
@@ -106,8 +108,14 @@ p {
     font-size: 20px;
 }
 
-h2, h3 {
-    text-align: center;
+#chero-text h1,
+#chero-text h3,
+#index-h1,
+#contact-text h2,
+#contact-text h3,
+.cinfo-text h3 {
+    text-align: left;
+    margin-bottom: inherit;
 }
 
 a {
@@ -164,11 +172,6 @@ nav {
     justify-content: center;
     align-items: start;
     gap: 8px;
-}
-
-#index-h1 {
-    text-align: inherit;
-    margin-bottom: inherit;
 }
 
 #index-one {
@@ -419,11 +422,6 @@ nav {
     text-align: justify;
 }
 
-#contact-text h2,
-#contact-text h3 {
-    text-align: left;
-}
-
 footer {
     background-color: var(--dark-blue);
     color: var(--light-blue);
@@ -492,6 +490,8 @@ footer > .page-container {
         max-width: 100%;
     }
 }
+
+/*About.html*/
 
 
 
@@ -653,11 +653,6 @@ border: 0px outset var(--light-red);
     flex: 3;
 }
 
-#chero-text h1,
-#chero-text h3 {
-    text-align: left
-}
-
 #contact-info-row {
     display: flex;
     align-items: start;
@@ -676,10 +671,6 @@ border: 0px outset var(--light-red);
     height: 32px;
     width: 32px;
     background-color: green;
-}
-
-.cinfo-text h3 {
-    text-align: left;
 }
 
 #google-map {
