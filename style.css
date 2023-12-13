@@ -302,6 +302,7 @@ nav {
 #makeover-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
     margin: 16px 0;
 }
@@ -487,8 +488,12 @@ footer > .page-container {
 }
 
 @media (max-width: 320px){
-
+    .page-container {
+        max-width: 100%;
+    }
 }
+
+
 
 /*Services.html*/
 
@@ -658,6 +663,7 @@ border: 0px outset var(--light-red);
     align-items: start;
     justify-content: space-evenly;
     gap: 48px;
+    flex-wrap: wrap;
 }
 
 .contact-info {
