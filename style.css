@@ -50,6 +50,7 @@ table {
 :root{
     --light-blue: #F3F3F7;
     --dark-blue: #26283B;
+    --middle-blue: hsl(234, 22%, 59%);
     --red: #E13D4C;
     --brick-red: #AA4A44;
 }
@@ -300,6 +301,12 @@ nav {
     width: 350px;
     background-color: var(--dark-blue);
     border-radius: 32px;
+    box-shadow: 8px 8px 8px 0 var(--middle-blue);
+    transition: 700ms ease;
+}
+
+.mostep-box:hover {
+    box-shadow: none;
 }
 
 .mostep-image {
@@ -319,6 +326,8 @@ nav {
     color: var(--light-blue);
     padding: 48px 0;
     margin: 64px 0;
+    border-top: 8px outset var(--dark-blue);
+    border-bottom: 8px outset var(--dark-blue);
 }
 
 #index-six > .page-container {
@@ -365,6 +374,8 @@ nav {
     border-radius: 32px;
     display: flex;
     flex-direction: column;
+    outline: none;
+    box-shadow: inset 4px 4px 8px 0 var(--dark-blue);
 }
 
 .review-box h4 {
@@ -376,7 +387,7 @@ nav {
     margin-top: 16px;
 }
 
-#index-seven {
+#contact-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -389,6 +400,7 @@ nav {
     background-color: var(--dark-blue);
     color: var(--light-blue);
     padding: 32px;
+    border: 8px outset var(--dark-blue);
 }
 
 #contact-text {
@@ -404,6 +416,7 @@ nav {
 footer {
     background-color: var(--dark-blue);
     color: var(--light-blue);
+    border-top: 8px outset var(--dark-blue);
 }
 
 footer > .page-container {
@@ -469,6 +482,10 @@ footer > .page-container {
 
 /*Services.html*/
 
+#services h1 {
+    margin-bottom: 32px;
+}
+
 #services-list {
     display: flex;
     flex-direction: column;
@@ -492,16 +509,20 @@ footer > .page-container {
 
 .sl-text {
     box-sizing: border-box;
-    height: 100%;
-    flex: 7;
+    height: 300px;
+    flex: 3;
     background-color: var(--dark-blue);
     color: var(--light-blue);
     height: 100%;
-    padding: 32px;
+    padding: 48px;
+    text-align: justify;
+    border: 8px outset var(--dark-blue);
 }
 
 .service-layer img {
+    box-sizing: border-box;
     height: 300px;
-    flex: 3;
+    flex: 2;
     background-color: green;
+    border: 8px outset var(--dark-blue);
 }
