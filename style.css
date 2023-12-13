@@ -153,6 +153,8 @@ nav {
     height: 600px;
     display: flex;
     align-items: center;
+    padding: 0;
+    padding-left: 32px;
 }
 
 #ibanner-text {
@@ -619,4 +621,77 @@ footer > .page-container {
 #gallery-button:hover {
 box-shadow: none;
 border: 0px outset var(--light-red);
+}
+
+/*Contact.html*/
+
+#contact-hero {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--middle-blue);
+    padding: 0;
+    padding-left: 32px;
+}
+
+#contact-form {
+    height: 500px;
+    flex: 2;
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    padding: 32px;
+    border: 8px outset var(--dark-blue);
+}
+
+#chero-text {
+    flex: 3;
+}
+
+#chero-text h1,
+#chero-text h3 {
+    text-align: left
+}
+
+#contact-info-row {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 48px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.cinfo-img {
+    height: 32px;
+    width: 32px;
+    background-color: green;
+}
+
+.cinfo-text h3 {
+    text-align: left;
+}
+
+#google-map {
+    width: 100%;
+    height: 600px;
+    background-color: green;
+}
+
+#locations-grid {
+    display: grid;
+    grid-template: repeat(3, 64px) / repeat(9, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.location-block {
+    grid-column: span 2;
+    border-left: 4px outset var(--middle-blue);
+    text-align: left;
+    padding-left: 16px;
 }
