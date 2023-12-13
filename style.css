@@ -534,16 +534,20 @@ footer > .page-container {
 }
 
 #about-projects {
-    width: 40%;
+    width: 50%;
+    text-align: justify;
+}
+
+#about-projects h2 {
+    text-align: left;
 }
 
 #about-pictures {
     height: 100%;
-    width: 60%;
+    width: 40%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 4px solid red;
+    justify-content: right;
 }
 
 #pictures-container {
