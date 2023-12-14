@@ -191,28 +191,21 @@
             </div>
         </div>
         <div class="page-container" id="contact-section">
-            <div id="contact-form">
-                <form action="send-email.php" method="post">
-                    <h2>Get A Free Estimate</h2>
-                    <fieldset>
-                        <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
-                        <input type="text" name="last-name" id="lasst-name" placeholder="Last Name" required>
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <input type="text" name="email" id="email" placeholder="Email Address" required>
-                        <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
-                    </fieldset>
-                    <br>
-                    <input type="text" name="location" id="location" placeholder="Location" required>
-                    <br>
-                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                    <br>
-                    <textarea type="text" name="message" id="message" placeholder="Please describe your project and any other information here." required></textarea>
-                    <br>
-                    <button>Send</button>
-                </form>
-            </div>
+            <form action="send-email.php" method="post" id="contact-form">
+                <h2>Get A Free Estimate</h2>
+                <fieldset>
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                    <input type="text" name="last-name" id="lasst-name" placeholder="Last Name" required>
+                </fieldset>
+                <fieldset>
+                    <input type="text" name="email" id="email" placeholder="Email Address" required>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+                </fieldset>
+                <input class="reg-input" type="text" name="location" id="location" placeholder="Location" required>
+                <input class="reg-input" type="text" name="subject" id="subject" placeholder="Subject" required>
+                <textarea class="reg-input" type="text" name="message" id="message" placeholder="Please describe your project and any other information here." required></textarea>
+                <button>Send</button>
+            </form>
             <div id="contact-text">
                 <h2>Home Remodeling & Renovation in the GTA & More</h2>
                 <h3>Get In Touch For Your Next Home Project!</h3>
