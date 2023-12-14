@@ -50,9 +50,11 @@ table {
 :root{
     --light-blue: #F3F3F7;
     --dark-blue: #26283B;
+    --strong-blue: hsl(234, 100%, 29%);
     --middle-blue: hsl(234, 22%, 59%);
     --red: #E13D4C;
     --light-red: hsl(355, 73%, 80%);
+    --strong-red: hsl(355, 100%, 56%);
     --roof-red: #C7535E;
 }
 
@@ -104,7 +106,8 @@ h5 {
     font-weight: 600;
 }
 
-p {
+p,
+li {
     font-size: 20px;
 }
 
@@ -131,11 +134,20 @@ button {
     color: var(--light-blue);
     background-color: var(--red);
     text-decoration: underline;
+    font-variant: small-caps;
     padding: 6px 16px;
     border-radius: 16px;
+    font-weight: 600;
     outline: none;
     border: none;
     cursor: pointer;
+    transition: 200ms ease-out;
+}
+
+button:hover {
+    text-decoration: none;
+    background-color: var(--strong-red);
+    text-shadow: 0 0 2px var(--light-blue);
 }
 
 nav {
@@ -170,11 +182,26 @@ header .logo-container {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+}
+
+#nav-links li {
     text-decoration: underline;
+    font-variant: small-caps;
+    transition: 200ms ease-out;
+    font-weight: 600;
+}
+
+#nav-links li:hover {
+    text-decoration: none;
+    text-shadow: 0 0 2px var(--middle-blue);
 }
 
 #nav-call {
-    background-color: #26283B;
+    background-color: var(--dark-blue);
+}
+
+#nav-call:hover {
+    background-color: var(--strong-blue);
 }
 
 /*Index.html*/
@@ -279,6 +306,11 @@ header .logo-container {
     align-items: center;
     border: 8px outset var(--dark-blue);
     cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+.is-block:hover {
+    background-color: var(--middle-blue);
 }
 
 .is-block > h4 {
