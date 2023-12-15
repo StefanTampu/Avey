@@ -231,6 +231,7 @@ header .logo-container {
 #index-one {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 32px;
     margin-bottom: 32px;
 }
@@ -543,7 +544,7 @@ footer > .page-container {
 .footer-group {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
 }
 
 .footer-group h3 {
@@ -569,12 +570,86 @@ footer > .page-container {
     .page-container {
         max-width: 1024px;
     }
+
+    #index-one img {
+        height: 500px;
+        width: 45%;
+    }
+
+    #i1-text {
+        width: 50%;
+    }
+
+    .reason-text h4 {
+        text-align: left;
+    }
+
+    .reason-text p {
+        text-align: left;
+    }
+
+    #reasons-container img {
+        height: 30px;
+    }
+
+    .ba-image {
+        height: 375px;
+        width: 300px;
+    }
+
+    footer > .page-container {
+        gap: 32px;
+    }
 }
 
 @media (max-width: 1024px){
     .page-container {
         max-width: 768px;
     }
+    #nav-links {
+        gap: 6px;
+    }
+    #nav-call {
+        white-space: nowrap;
+    }
+    #ibanner-text {
+        width: 70%;
+    }
+
+    #index-one img {
+        height: 300px;
+        width: 40%;
+    }
+    
+    #i1-text {
+        width: 55%;
+        gap: 16px;
+    }
+
+    #i1-text h2 {
+        margin-bottom: 0;
+    }
+
+    #reasons-container {
+        width: 100%;
+        margin: 16px 0;
+        grid-template: repeat(2, 200px) / repeat(3, 1fr);
+        gap: 24px;
+    }
+    
+    .reason {
+        gap: 8px;
+        padding: 8px;
+    }
+    
+    #reasons-container img {
+        height: 30px;
+    }
+
+    #index-services-grid {
+        grid-template: repeat(2, 150px) / repeat(5, 1fr);
+    }
+
 }
 
 @media (max-width: 768px){
