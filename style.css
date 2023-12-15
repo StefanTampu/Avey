@@ -362,16 +362,18 @@ header .logo-container {
 }
 
 #makeover-container {
-    display: grid;
-    grid-template: repeat(3, 300px) / repeat(3, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
     margin: 16px 0;
 }
 
 .mostep-box {
     height: 300px;
-    width: 350px;
+    width: 200px;
     background-color: var(--dark-blue);
     border-radius: 32px;
     box-shadow: 8px 8px 8px 0 var(--middle-blue);
