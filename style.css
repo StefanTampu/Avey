@@ -606,6 +606,16 @@ footer > .page-container {
     .page-container {
         max-width: 768px;
     }
+
+    #nav-logo {
+        height: 60px;
+        width: 75px;
+    }
+
+    header .logo-container h3 {
+        font-size: 22px;
+    }
+
     #nav-links {
         gap: 6px;
     }
@@ -650,6 +660,100 @@ footer > .page-container {
         grid-template: repeat(2, 150px) / repeat(5, 1fr);
     }
 
+    #reviews-section {
+        gap: 24px;
+        overflow: hidden;
+    }
+    
+    #reviews-container {
+        gap: 24px;
+        overflow: hidden;
+    }
+    
+    .review-box {
+        height: 300px;
+        background-color: var(--light-blue);
+        color: var(--dark-blue);
+        padding: 32px;
+        text-align: justify;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        outline: none;
+        box-shadow: inset 4px 4px 8px 0 var(--dark-blue);
+    }
+
+    #r3 {
+        display: none;
+    }
+
+    #contact-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: start;
+        gap: 24px;
+    }
+    
+    #contact-form {
+        height: 600px;
+        flex: 2;
+        background-color: var(--dark-blue);
+        color: var(--light-blue);
+        padding: 32px;
+        border: 8px outset var(--dark-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    fieldset {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    footer > .page-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+        justify-items: center;
+    }
+
+    footer > .page-container > a {
+        align-self: center;
+    }
+
+    #footer-logo {
+        height: 140px;
+        width: 175px;
+    }
+
+    footer .logo-container h3 {
+        display: none;
+    }
+
+    #footer-about {
+        width: 100%;
+        grid-column: span 2;
+        align-self: center;
+        text-align: justify;
+    }
+
+    #footer-about h3 {
+        position: relative;
+        visibility: hidden;
+    }
+
+    #footer-about h3:after {
+        position: absolute;
+        left: 0;
+        content: "About Avey Construction";
+        visibility: visible;
+    }
 }
 
 @media (max-width: 768px){
