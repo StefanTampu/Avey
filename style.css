@@ -183,6 +183,28 @@ header .logo-container {
     background-size: cover;
 }
 
+.hamburger {
+    background-color: var(--red);
+    padding: 4px 8px;
+    border: 8px double var(--light-blue);
+    cursor: pointer;
+    transition: 500ms;
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: var(--strong-red);
+}
+
+.bar {
+    display: block;
+    background-color: var(--light-blue);
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: 500ms;
+}
+
 #nav-links {
     display: flex;
     justify-content: space-between;
@@ -607,21 +629,73 @@ footer > .page-container {
         max-width: 768px;
     }
 
-    #nav-logo {
-        height: 60px;
-        width: 75px;
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 32px;
+        top: 40px;
     }
 
-    header .logo-container h3 {
-        font-size: 22px;
+    .hamburger.active {
+        background-color: var(--red);
+        border: 8px double var(--light-blue);
+        position: fixed;
+        z-index: 2;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        background-color: var(--light-blue);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: var(--light-blue);
     }
 
     #nav-links {
-        gap: 6px;
+        width: 0px;
+        height: 100vh;
+        overflow: hidden;
+        background-color: hsl(234, 22%, 19%);
+        transition: 1s ease-in;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 16px;
+        gap: 16px;
+        position: fixed;
+        right: 0;
+        visibility: hidden;
+        top: 0;
+        z-index: 1;
+        box-shadow: -8px 0 16px 0 var(--middle-blue);
     }
+
+    #nav-links.active {
+        width: 27%;
+        visibility: visible;
+    }
+
+    .reg-nav {
+        color: var(--light-blue);
+        padding-left: 16px;
+    }
+    
+    #nav-links a,
+    #nav-links button  {
+        font-size: 34px;
+        width: 100%;
+    }
+
     #nav-call {
         white-space: nowrap;
     }
+
     #ibanner-text {
         width: 70%;
     }
