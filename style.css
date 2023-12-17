@@ -186,7 +186,7 @@ header .logo-container {
 .hamburger {
     background-color: var(--red);
     padding: 4px 8px;
-    border: 8px double var(--light-blue);
+    border: 8px outset var(--strong-red);
     cursor: pointer;
     transition: 500ms;
     display: none;
@@ -632,14 +632,15 @@ footer > .page-container {
     .hamburger {
         display: block;
         position: absolute;
-        right: 32px;
+        right: 48px;
         top: 40px;
+        z-index: 2;
     }
 
     .hamburger.active {
-        background-color: var(--red);
-        border: 8px double var(--light-blue);
         position: fixed;
+        right: 48px;
+        top: 40px;
         z-index: 2;
     }
 
@@ -694,6 +695,8 @@ footer > .page-container {
 
     #nav-call {
         white-space: nowrap;
+        background-color: var(--light-blue);
+        color: var(--dark-blue);
     }
 
     #ibanner-text {
@@ -743,19 +746,6 @@ footer > .page-container {
         gap: 24px;
         overflow: hidden;
     }
-    
-    .review-box {
-        height: 300px;
-        background-color: var(--light-blue);
-        color: var(--dark-blue);
-        padding: 32px;
-        text-align: justify;
-        border-radius: 32px;
-        display: flex;
-        flex-direction: column;
-        outline: none;
-        box-shadow: inset 4px 4px 8px 0 var(--dark-blue);
-    }
 
     #r3 {
         display: none;
@@ -771,15 +761,7 @@ footer > .page-container {
     
     #contact-form {
         height: 600px;
-        flex: 2;
-        background-color: var(--dark-blue);
-        color: var(--light-blue);
         padding: 32px;
-        border: 8px outset var(--dark-blue);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 16px;
     }
     
@@ -884,11 +866,116 @@ footer > .page-container {
         font-size: 24px;
     }
 
+    #nav-links.active {
+        width: 80%;
+    }
+
+    #index-banner {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-left: 32px;
+    }
+    
+    #ibanner-text {
+        width: 100%;
+    }
+    
+    #index-one {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+    
+    #index-one img {
+        height: 400px;
+        width: 95%;
+    }
+    
+    #i1-text {
+        width: 95%;
+        gap: 8px;
+    }
+    
+    #i1-text h2 {
+        margin-bottom: 0px;
+    }
+
+    #reasons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .reason {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px;
+    }
+    
+    .reason-text h4 {
+        text-align: left;
+    }
+    
+    #reasons-container img {
+        height: 30px;
+    }
+
+    .review-box {
+        height: 200px;
+    }
+
+    #r2 {
+        display: none;
+    }
+
+    #contact-form {
+        height: 600px;
+        flex: none;
+        width: 80%;
+        padding: 8px 32px;
+    }
+
+    #contact-form input {
+        height: 25px;
+        border-radius: 2px;
+        font-size: 17px;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    fieldset input {
+        width: 50%;
+    }
+    
     #contact-form input,
     textarea {
-    height: 25px;
-    border-radius: 2px;
-    font-size: 17px;
+        height: 29px;
+        font-size: 17px;
+    }
+    
+    .reg-input {
+        width: 100%;
+    }
+    
+    textarea {
+        height: 260px;
+        resize: none;
+    }
+    
+    #contact-text {
+        flex: none;
+        text-align: justify;
+    }
+
+    footer > .page-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: left;
     }
 }
 
