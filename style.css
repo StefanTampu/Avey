@@ -1392,15 +1392,45 @@ footer > .page-container {
 }
 
 @media (max-width: 1024px){
+    .service-layer {
+        height: 400px;
+    }
 
+    .sl-text {
+        padding: 32px;
+    }
+
+    .service-layer img {
+        height: 400px;
+    }
 }
 
 @media (max-width: 768px){
+    .service-layer {
+        height: 300px;
+    }
 
+    .sl-text {
+        padding: 16px;
+    }
+
+    .service-layer img {
+        height: 300px;
+    }
 }
 
 @media (max-width: 600px){
+    .service-layer {
+        height: 450px;
+    }
 
+    .sl-text {
+        padding: 16px;
+    }
+
+    .service-layer img {
+        height: 450px;
+    }
 }
 
 @media (max-width: 425px){
