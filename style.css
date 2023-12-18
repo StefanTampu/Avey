@@ -352,6 +352,10 @@ header .logo-container {
     cursor: default;
 }
 
+.invisible-block {
+    display: none;
+}
+
 #index-four {
     display: flex;
     flex-direction: column;
@@ -634,7 +638,6 @@ footer > .page-container {
         position: absolute;
         right: 48px;
         top: 40px;
-        z-index: 2;
     }
 
     .hamburger.active {
@@ -814,7 +817,7 @@ footer > .page-container {
 
 @media (max-width: 768px){
     .page-container {
-        max-width: 425px;
+        max-width: 600px;
     }
 
     h1 {
@@ -922,6 +925,10 @@ footer > .page-container {
         height: 30px;
     }
 
+    .is-block {
+        padding-left: 8px;
+    }
+
     .review-box {
         height: 200px;
     }
@@ -979,6 +986,48 @@ footer > .page-container {
     }
 }
 
+@media (max-width: 600px){
+    .page-container {
+        max-width: 425px;
+    }
+
+    .bar {
+        width: 16px;
+        margin: 3px auto;
+        transition: 500ms;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        background-color: var(--light-blue);
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+        background-color: var(--light-blue);
+    }
+
+    #nav-links.active {
+        width: 100%;
+    }
+
+    #index-one img {
+        height: 300px;
+    }
+
+    #index-services-grid {
+        grid-template: repeat(4, 200px) / repeat(3, 1fr);
+    }
+    
+    .invisible-block {
+        display: block;
+    }
+
+    .small-invisible {
+        display: none;
+    }
+}
+
 @media (max-width: 425px){
     .page-container {
         max-width: 375px;
@@ -1001,11 +1050,31 @@ footer > .page-container {
     .rev-arrow p {
         font-size: 22px;
     }
+
+    fieldset {
+        display: contents;
+    }
+
+    fieldset input {
+        width: 100%;
+    }
 }
 
 @media (max-width: 375px){
     .page-container {
         max-width: 320px;;
+    }
+
+    .review-box {
+        height: 300px;
+        text-align: left;
+    }
+
+    #contact-form {
+        height: 600px;
+        flex: none;
+        width: 80%;
+        padding: 8px 16px;
     }
 }
 
