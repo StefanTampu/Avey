@@ -1343,30 +1343,15 @@ footer > .page-container {
 /*Services.html*/
 
 #services-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template: repeat(4, 300px) / repeat(5, 1fr);
     gap: 16px;
 }
 
-.service-layer {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-}
-
-.sl-left {
-    flex-direction: row-reverse;
-}
 
 .sl-text {
     box-sizing: border-box;
-    height: 300px;
-    flex: 3;
+    grid-column: span 3;
     background-color: var(--dark-blue);
     color: var(--light-blue);
     height: 100%;
@@ -1375,10 +1360,10 @@ footer > .page-container {
     border: 8px outset var(--dark-blue);
 }
 
-.service-layer img {
+#services-list img {
     box-sizing: border-box;
-    height: 300px;
-    flex: 2;
+    height: 100%;
+    grid-column: span 2;
     background-color: green;
     border: 8px outset var(--dark-blue);
 }
@@ -1392,44 +1377,37 @@ footer > .page-container {
 }
 
 @media (max-width: 1024px){
-    .service-layer {
-        height: 400px;
+    #services-list {
+        grid-template-rows: repeat(4, 400px);
     }
 
     .sl-text {
         padding: 32px;
     }
-
-    .service-layer img {
-        height: 400px;
-    }
 }
 
 @media (max-width: 768px){
-    .service-layer {
-        height: 300px;
+    #services-list {
+        grid-template-rows: repeat(4, 285px);
     }
 
     .sl-text {
         padding: 16px;
-    }
-
-    .service-layer img {
-        height: 300px;
     }
 }
 
 @media (max-width: 600px){
-    .service-layer {
-        height: 450px;
+    #services-list {
+        grid-template-rows: 280px 200px repeat(2, 280px) 200px 280px;
+        grid-template-columns: repeat(2, 1fr);
     }
-
+    
     .sl-text {
-        padding: 16px;
+        grid-column: span 2;
     }
-
-    .service-layer img {
-        height: 450px;
+    
+    #services-list img {
+        grid-column: span 1;
     }
 }
 
@@ -1438,11 +1416,15 @@ footer > .page-container {
 }
 
 @media (max-width: 375px){
-
+    #services-list {
+        grid-template-rows: 375px 150px repeat(2, 375px) 150px 375px;
+    }
 }
 
 @media (max-width: 320px){
-
+    #services-list {
+        grid-template-rows: 450px 150px repeat(2, 450px) 150px 450px;
+    }
 }
 
 /*Gallery.html*/
