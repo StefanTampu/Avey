@@ -213,23 +213,42 @@ header .logo-container {
 }
 
 #nav-links li {
-    text-decoration: underline;
     font-variant: small-caps;
     transition: 200ms ease-out;
     font-weight: 600;
 }
 
-#nav-links li:hover {
+.reg-nav {
+    text-decoration: underline;
+}
+
+.reg-nav:hover {
     text-decoration: none;
     text-shadow: 0 0 2px var(--middle-blue);
 }
 
+#call-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transform: translateY(14px);
+}
+
 #nav-call {
     background-color: var(--dark-blue);
+    margin-bottom: 8px;
+    z-index: 2;
 }
 
 #nav-call:hover {
     background-color: var(--strong-blue);
+}
+
+#nav-call-number {
+    transform: translateY(-35px);
+    color: var(--light-blue);
+    z-index: 1;
+    transition: 500ms ease-out;
 }
 
 /*Index.html*/
