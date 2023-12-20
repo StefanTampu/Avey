@@ -40,3 +40,12 @@ const width = window.innerWidth;
         }
     });
 })();
+
+const baBefore = document.querySelector(".ba-before");
+const baLine = document.querySelector(".ba-line");
+const baLineStyles = window.getComputedStyle(baLine);
+
+(function drag() {
+    let left = baLineStyles.getPropertyValue("left");
+    baBefore.style.width = left;
+})();

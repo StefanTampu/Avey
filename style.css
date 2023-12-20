@@ -399,13 +399,59 @@ header .logo-container {
     border-radius: 64px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    position: relative;
 }
 
 .ba-line {
     height: 100%;
-    width: 8px;
-    background-color: var(--light-blue);
+    width: 16px;
+    background-color: var(--red);
+    left: 70%;
+    position: absolute;
+    z-index: 3;
 }
+
+.ba-before,
+.ba-after {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ba-before {
+    z-index: 2;
+    background-image: url();
+    background-image: url(Resources/Try1.jpg);
+}
+
+.ba-after {
+    width: 100%;
+    z-index: 1;
+    background-image: url(Resources/Try2.jpg);
+}
+
+/*.img-before,
+.img-after {
+    height: 500px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-before {
+    background-image: url(Resources/Try1.jpg);
+    background-position: left;
+}
+
+.img-after {
+    background-image: url(Resources/Try2.jpg);
+    background-position: center;
+    transform: translateX(-200px);
+}*/
 
 #makeover-container {
     display: flex;
