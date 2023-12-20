@@ -15,17 +15,28 @@ function closeMenu() {
 
 const navCall = document.getElementById("nav-call");
 const navCallNumber = document.getElementById("nav-call-number");
+const width = window.innerWidth;
 
 (function phoneNumberAppear() {
     let i = 0;
     navCall.addEventListener("click", () => {
         i++;
-        if(i%2 === 1){
-            navCallNumber.style.color = "var(--dark-blue)";
-            navCallNumber.style.transform = "translateY(0px)";
+        if(width > 1024){
+            if(i%2 === 1){
+                navCallNumber.style.color = "var(--dark-blue)";
+                navCallNumber.style.transform = "translateY(0px)";
+            } else {
+                navCallNumber.style.color = "var(--light-blue)";
+                navCallNumber.style.transform = "translateY(-12px)";
+            }
         } else {
-            navCallNumber.style.color = "var(--light-blue)";
-            navCallNumber.style.transform = "translateY(-12px)";
+            if(i%2 === 1){
+                navCallNumber.style.color = "var(--light-blue)";
+                navCallNumber.style.transform = "translateX(0px)";
+            } else {
+                navCallNumber.style.color = "var(--dark-blue)";
+                navCallNumber.style.transform = "translateX(-178px)";
+            }
         }
     });
 })();
