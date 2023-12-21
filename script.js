@@ -41,10 +41,12 @@ const width = window.innerWidth;
     });
 })();
 
-const baImage = document.querySelector(".ba-image")
-document.querySelector(".slider").addEventListener("input", (e) => {
-    baImage.style.setProperty("--position", `${e.target.value}%`)
-})
+const baImages = document.querySelectorAll(".ba-image");
+for (const baImage of baImages){
+    baImage.querySelector(".slider").addEventListener("input", (e) => {
+        baImage.style.setProperty("--position", `${e.target.value}%`)
+    })
+}
 
 /*
 const baImage = document.querySelector(".ba-image");
