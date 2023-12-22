@@ -58,6 +58,22 @@ table {
     --roof-red: #C7535E;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    border-right: 7px solid rgba(0, 0, 0, 0.01);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
+    background-color: var(--light-blue);
+    position: absolute;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
+    background-color: var(--middle-blue);
+}
+
 body {
     background-color: var(--light-blue);
     color: var(--dark-blue);
@@ -591,25 +607,19 @@ header .logo-container {
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
     gap: 12px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: 0px;
+    overflow-x: auto;
 }
 
 #reviews-container::-webkit-scrollbar {
-    width: 12px;
+    width: 16px;
 }
+
 #reviews-container::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
     border-radius: 10px;
-    background-color: var(--light-blue);
 }
 
 #reviews-container::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
-    background-color: var(--middle-blue);
 }
 
 .review-box {
@@ -622,6 +632,27 @@ header .logo-container {
     outline: none;
     box-shadow: inset 4px 4px 8px 0 var(--dark-blue);
     position: relative;
+}
+
+.overflow-review{
+    overflow-y: scroll;
+}
+
+.overflow-review::-webkit-scrollbar {
+    width: 20px;
+}
+
+.overflow-review::-webkit-scrollbar-track {
+    border-radius: 4px;
+    margin-block: 32px;
+    -webkit-box-shadow: none;
+}
+
+.overflow-review::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
+    background-color: var(--middle-blue);
+    border: 4px solid var(--light-blue);
 }
 
 .review-box h4 {
@@ -942,10 +973,6 @@ footer > .page-container {
         overflow: hidden;
     }
 
-    #r3 {
-        display: none;
-    }
-
     #contact-section {
         display: flex;
         flex-direction: column-reverse;
@@ -1123,10 +1150,6 @@ footer > .page-container {
 
     .review-box {
         height: 200px;
-    }
-
-    #r2 {
-        display: none;
     }
 
     .contact-form {
