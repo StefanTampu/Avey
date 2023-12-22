@@ -1362,6 +1362,11 @@ footer > .page-container {
 .picture {
     height: 200px;
     width: 200px;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 4px 0 var(--dark-blue);
+    transition: 800ms ease-in;
 }
 
 @media (max-width: 2560px){
@@ -1683,27 +1688,31 @@ footer > .page-container {
 }
 
 #p1 {
-    background-color: var(--red);
+    background-image: url(Resources/pictures-loop/p101.jpg);
+    border: 8px solid var(--red);
     z-index: 2;
     transform: rotate(-17deg) translate(-50px, 0) ;
 }
 
 #p2 {
-    background-color: yellow;
+    background-image: url(Resources/pictures-loop/p201.jpg);
+    border: 8px solid yellow;
     z-index: 1;
     transform: rotate(17deg) translate(-125px, -10px);
 }
 
 #p3 {
-    background-color: var(--dark-blue);
+    background-image: url(Resources/pictures-loop/p301.jpg);
+    border: 8px solid var(--dark-blue);
     z-index: 3;
     transform: rotate(7deg) translate(-75px, -25px);
 }
 
 #p4 {
-    background-color: var(--middle-blue);
+    background-image: url(Resources/pictures-loop/p401.jpg);
+    border: 8px solid var(--middle-blue);
     z-index: 4;
-    transform: translate(-125px, -45px) rotate(82deg);
+    transform: translate(-125px, -45px) rotate(-8deg);
 }
 
 #gallery-button {

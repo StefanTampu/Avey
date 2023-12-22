@@ -48,6 +48,49 @@ for (const baImage of baImages){
     })
 }
 
+function pictureLooping(){
+    const p1 = document.getElementById("p1");
+    const p2 = document.getElementById("p2");
+    const p3 = document.getElementById("p3");
+    const p4 = document.getElementById("p4");
+    const pictures1 = ["p101", "p102", "p103"];
+    const pictures2 = ["p201", "p202"];
+    const pictures3 = ["p301", "p302", "p303"];
+    const pictures4 = ["p401", "p402", "p403", "p404"];
+    let i = 0;
+
+    function changeImage(pictureName, picturesGroup){
+        i++;
+        let q = i%picturesGroup.length;
+        pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[q]}.jpg)`;
+/*        if (i < picturesGroup.length){
+            pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[i]}.jpg)`;
+        } else if (i === picturesGroup.length){
+            i = 0;
+            pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[i]}.jpg)`;
+        }*/
+    }
+
+    setInterval(function(){
+        changeImage(p1, pictures1);
+    }, 3000);
+
+    setInterval(function(){
+        changeImage(p2, pictures2);
+    }, 4000);
+
+    setInterval(function(){
+        changeImage(p3, pictures3);
+    }, 2700);
+
+    setInterval(function(){
+        changeImage(p4, pictures4);
+    }, 2300)
+}
+
+pictureLooping();
+
+
 /* const reviewsContainer = document.querySelector("#reviews-container");
 
 let isDragging = false, startX, startScrollLeft;
