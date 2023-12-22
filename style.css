@@ -74,6 +74,13 @@ table {
     background-color: var(--middle-blue);
 }
 
+@supports (scrollbar-color: var(--dark-blue) var(--light-blue)){ /*Customizing for firefox and other browsers*/
+    * {
+        scrollbar-color: var(--dark-blue) var(--light-blue);
+        scrollbar-width: thin;
+    }
+}
+
 body {
     background-color: var(--light-blue);
     color: var(--dark-blue);
@@ -611,7 +618,7 @@ header .logo-container {
 }
 
 #reviews-container::-webkit-scrollbar {
-    width: 16px;
+    height: 16px;
 }
 
 #reviews-container::-webkit-scrollbar-track {
@@ -645,14 +652,14 @@ header .logo-container {
 .overflow-review::-webkit-scrollbar-track {
     border-radius: 4px;
     margin-block: 32px;
-    -webkit-box-shadow: none;
+    -webkit-box-shadow: none; /*Removed to blend in with background*/
 }
 
 .overflow-review::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
     background-color: var(--middle-blue);
-    border: 4px solid var(--light-blue);
+    border: 4px solid var(--light-blue); /*Add this to make scrollbar look like it's pushed off the wall"*/
 }
 
 .review-box h4 {
