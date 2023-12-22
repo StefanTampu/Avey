@@ -48,6 +48,29 @@ for (const baImage of baImages){
     })
 }
 
+/* const reviewsContainer = document.querySelector("#reviews-container");
+
+let isDragging = false, startX, startScrollLeft;
+
+const dragStart = (e) => {
+    isDragging = true;
+    reviewsContainer.classList.add("dragging");
+    startX = e.pageX;
+    startScrollLeft = reviewsContainer.scrollLeft;
+}
+
+const dragReviews = (e) => {
+    reviewsContainer.scrollLeft = e.pageX;
+}
+
+const dragStop = () => {
+    isDragging = false;
+    reviewsContainer.classList.remove("dragging");
+}
+
+reviewsContainer.addEventListener("mousemove", dragReviews);
+document.addEventListener("mouseup", dragStop);*/
+
 /*
 const baImage = document.querySelector(".ba-image");
 const baBefore = document.querySelector(".ba-before");
