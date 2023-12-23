@@ -1937,10 +1937,13 @@ border: 0px outset var(--light-red);
 }
 
 #google-map {
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+    margin: auto;
     height: 600px;
-    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px var(--dark-blue);
 }
 
 #locations-grid {
