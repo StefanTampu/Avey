@@ -1796,6 +1796,47 @@ border: 0px outset var(--light-red);
     margin-top: 0px;
 }
 
+/*#gallery-body {
+    position: relative;
+    pointer-events: none;
+}*/
+
+#gallery-img-display {
+    box-sizing: border-box;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(15px);
+    background-color: hsla(234, 22%, 19%, 0.8);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    transition: 700ms ease-in;
+}
+
+#gid-exit {
+    position: absolute;
+    top: 128px;
+    right: 64px;
+}
+
+#gallery-img-popped {
+    height: 700px;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 0 16px var(--light-blue);
+}
+
+#gallery-img-display.gid-show {
+    visibility: visible;
+    opacity: 1;
+}
+
 @media (max-width: 2560px){
 
 }
