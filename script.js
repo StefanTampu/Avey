@@ -59,33 +59,35 @@ function pictureLooping(){
     const pictures4 = ["p401", "p402", "p403", "p404"];
     let i = 0;
 
-    function changeImage(pictureName, picturesGroup){
-        i++;
-        let q = i%picturesGroup.length;
-        pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[q]}.jpg)`;
-/*        if (i < picturesGroup.length){
-            pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[i]}.jpg)`;
-        } else if (i === picturesGroup.length){
-            i = 0;
-            pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[i]}.jpg)`;
-        }*/
+    if(p1){
+        function changeImage(pictureName, picturesGroup){
+            i++;
+            let q = i%picturesGroup.length;
+            pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[q]}.jpg)`;
+    /*        if (i < picturesGroup.length){
+                pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[i]}.jpg)`;
+            } else if (i === picturesGroup.length){
+                i = 0;
+                pictureName.style.backgroundImage = `url(Resources/pictures-loop/${picturesGroup[i]}.jpg)`;
+            }*/
+        }
+    
+        setInterval(function(){
+            changeImage(p1, pictures1);
+        }, 3000);
+    
+        setInterval(function(){
+            changeImage(p2, pictures2);
+        }, 4000);
+    
+        setInterval(function(){
+            changeImage(p3, pictures3);
+        }, 2700);
+    
+        setInterval(function(){
+            changeImage(p4, pictures4);
+        }, 2300)
     }
-
-    setInterval(function(){
-        changeImage(p1, pictures1);
-    }, 3000);
-
-    setInterval(function(){
-        changeImage(p2, pictures2);
-    }, 4000);
-
-    setInterval(function(){
-        changeImage(p3, pictures3);
-    }, 2700);
-
-    setInterval(function(){
-        changeImage(p4, pictures4);
-    }, 2300)
 }
 
 pictureLooping();
@@ -99,32 +101,34 @@ function galleryAppear(){
     const galleryContact = document.querySelector(".gallery-contact");
     const galleryContainerImages = document.querySelectorAll(".gc-img");
 
-    function changeOne(){
-        galleryContainer.classList.add("active-gc");
-        picturesContainer.style.opacity = "0";
-        galleryContact.classList.add('gallery-contact-active');
-        galleryButton.classList.add("gallery-button-inactive");
-    }
-
-    function changeTwo(){
-        let a = 0;
-
-        function gcImageAppear(){
-            if (a < galleryContainerImages.length){
-                galleryContainerImages[a].classList.add("gc-img-appear");
-                a++;
-            } else {
-                clearInterval(gcia);
-            }
+    if(picturesContainer){
+        function changeOne(){
+            galleryContainer.classList.add("active-gc");
+            picturesContainer.style.opacity = "0";
+            galleryContact.classList.add('gallery-contact-active');
+            galleryButton.classList.add("gallery-button-inactive");
         }
-
-        const gcia = setInterval(gcImageAppear, 300);
+    
+        function changeTwo(){
+            let a = 0;
+    
+            function gcImageAppear(){
+                if (a < galleryContainerImages.length){
+                    galleryContainerImages[a].classList.add("gc-img-appear");
+                    a++;
+                } else {
+                    clearInterval(gcia);
+                }
+            }
+    
+            const gcia = setInterval(gcImageAppear, 300);
+        }
+    
+        galleryButton.addEventListener("click", () => {
+            changeOne();
+            changeTwo();
+        })
     }
-
-    galleryButton.addEventListener("click", () => {
-        changeOne();
-        changeTwo();
-    })
 }
 
 galleryAppear();
