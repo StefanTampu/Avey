@@ -1796,11 +1796,6 @@ border: 0px outset var(--light-red);
     margin-top: 0px;
 }
 
-/*#gallery-body {
-    position: relative;
-    pointer-events: none;
-}*/
-
 #gallery-img-display {
     box-sizing: border-box;
     position: fixed;

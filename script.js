@@ -132,7 +132,7 @@ function galleryAppear(){
     })
 }
 
-if(galleryContainerImages){
+if(document.body.id === "gallery-body"){
     galleryAppear();
 
     galleryContainerImages.forEach((image) => {
