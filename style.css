@@ -553,7 +553,7 @@ header .logo-container {
 
 .mostep-box {
     height: 300px;
-    width: 200px;
+    width: 300px;
     background-color: var(--dark-blue);
     border-radius: 32px;
     box-shadow: 8px 8px 8px 0 var(--middle-blue);
@@ -573,7 +573,7 @@ header .logo-container {
 .mostep-text {
     color: var(--light-blue);
     padding: 16px;
-    text-align: justify;
+    text-align: left;
 }
 
 #index-six {
@@ -602,18 +602,18 @@ header .logo-container {
 #reviews-section {
     height: 400px;
     padding: 16px 0 0 0;
-    max-width: 1600px;
+    max-width: 5000px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 #reviews-container {
     height: 400px;
-    overflow: hidden;
     display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-auto-columns: 500px;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    gap: 12px;
     overflow-x: auto;
 }
 
@@ -631,6 +631,7 @@ header .logo-container {
 
 .review-box {
     height: 300px;
+    width: 400px;
     background-color: var(--light-blue);
     color: var(--dark-blue);
     padding: 32px;
@@ -834,8 +835,13 @@ footer > .page-container {
     }
 
     .review-box {
+        width: 400px;
         padding: 16px;
         text-align: left;
+    }
+
+    .rev-link {
+        top: 32px;
     }
 
     footer > .page-container {
@@ -972,12 +978,7 @@ footer > .page-container {
 
     #reviews-section {
         gap: 24px;
-        overflow: hidden;
-    }
-    
-    #reviews-container {
-        gap: 24px;
-        overflow: hidden;
+        height: 500px;
     }
 
     #contact-section {
@@ -1087,8 +1088,16 @@ footer > .page-container {
         font-size: 24px;
     }
 
-    .rev-arrow p {
-        font-size: 28px;
+    #reviews-section {
+        height: 350px;
+    }
+
+    #reviews-container {
+        height: 300px;
+    }
+
+    .review-box {
+        height: 200px;
     }
 
     .review-box h4 {
@@ -1153,10 +1162,6 @@ footer > .page-container {
 
     .is-block {
         padding-left: 8px;
-    }
-
-    .review-box {
-        height: 200px;
     }
 
     .contact-form {
@@ -1257,8 +1262,14 @@ footer > .page-container {
         font-size: 20px;
     }
 
-    .rev-arrow p {
-        font-size: 22px;
+    #reviews-container {
+        height: 400px;
+        grid-template-columns: repeat(3, 300px);
+        grid-auto-columns: 300px;
+    }
+
+    .review-box {
+        width: 250px;
     }
 
     fieldset {
@@ -1507,7 +1518,7 @@ footer > .page-container {
     #about-pictures #p4 {
         background-color: var(--middle-blue);
         z-index: 4;
-        transform: translate(-15px, -45px) rotate(82deg);
+        transform: translate(-15px, -45px) rotate(-8deg);
     }
 
     #pictures-container {
