@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../index.html");
     }
 
-    $to = "info@aveyconstruction.ca";
+    $to = "stefan_tampu@yahoo.com";
     $headers = "From:" . $email;
     $email_body = "You have received a new message from $firstname $lastname.\n".
         "Email address: $email.\n".
