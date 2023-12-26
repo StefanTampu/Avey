@@ -334,7 +334,6 @@ header .logo-container {
     justify-content: space-between;
     gap: 16px;
     padding: 16px;
-    border: 4px solid red;
 }
 
 .reason-text h4 {
@@ -690,9 +689,42 @@ header .logo-container {
 #contact-section {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     gap: 32px;
 }
+
+#hint-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+}
+
+#hint-container > h5 {
+    color: var(--red);
+    transition: 500ms ease;
+    font-variant: small-caps;
+}
+
+#hint-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100vh;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px 0 var(--light-red);
+    border: 8px outset var(--red);
+    transition: 500ms ease;
+}
+
+#hint-container:hover > h5 {
+    color: var(--strong-red);
+    text-shadow: 0 0 4px var(--light-red);
+}
+
+#hint-button:hover {
+    box-shadow: none;
+    border: 0px outset var(--light-red);
+    }
 
 .contact-form {
     height: 600px;
@@ -745,6 +777,7 @@ textarea {
 #contact-text {
     flex: 3;
     text-align: justify;
+    padding-top: 150px;
 }
 
 footer {
