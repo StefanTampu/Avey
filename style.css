@@ -1616,6 +1616,7 @@ footer > .page-container {
     padding: 48px;
     text-align: justify;
     border: 8px outset var(--dark-blue);
+    transition: 800ms ease;
 }
 
 .sl-text:hover,
