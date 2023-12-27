@@ -423,11 +423,19 @@ header .logo-container {
     position: relative;
     overflow: hidden;
     --position: 50%;
+    height: 500px;
+    width: 400px;
+    box-shadow: 8px 8px 8px 0 var(--middle-blue);
+    transition: 800ms;
+}
+
+.ba-image:active {
+    box-shadow: none;
 }
 
 .ba-img-container {
-    height: 500px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
 }
 
 .slider-image {
@@ -856,8 +864,13 @@ footer > .page-container {
     }
 
     .ba-image {
-        height: 375px;
-        width: 300px;
+        height: 400px;
+        width: 320px;
+    }
+
+    .ba-img-container {
+        height: 400px;
+        width: 320px;
     }
 
     #reviews-section {
@@ -1421,7 +1434,7 @@ footer > .page-container {
 }
 
 #about-warranty > .page-container {
-    height: 200px;
+    height: 150px;
     background-color: var(--light-blue);
     padding: 32px;
     margin-bottom: 0px;
@@ -1498,6 +1511,14 @@ footer > .page-container {
         align-content: center;
         justify-content: center;
         gap: 16px;
+    }
+
+    #about-warranty {
+        margin-bottom: 0;
+    }
+
+    #about-warranty > .page-container {
+        height: 200px;
     }
 }
 
@@ -1661,6 +1682,14 @@ footer > .page-container {
     grid-column: span 2;
     background-color: green;
     border: 8px outset var(--dark-blue);
+}
+
+.threed-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px;
 }
 
 @media (max-width: 2560px){
