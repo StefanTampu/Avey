@@ -709,10 +709,13 @@ header .logo-container {
     gap: 8px;
 }
 
-#hint-container > h5 {
+#hint {
     color: var(--red);
     transition: 500ms ease;
     font-variant: small-caps;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 1s ease;
 }
 
 #hint-button {
@@ -725,7 +728,7 @@ header .logo-container {
     transition: 500ms ease;
 }
 
-#hint-container:hover > h5 {
+#hint-container:hover > #hint {
     color: var(--strong-red);
     text-shadow: 0 0 4px var(--light-red);
 }
@@ -733,7 +736,13 @@ header .logo-container {
 #hint-button:hover {
     box-shadow: none;
     border: 0px outset var(--light-red);
-    }
+}
+
+#contact-div {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: 700ms ease-in;
+}
 
 .contact-form {
     height: 600px;

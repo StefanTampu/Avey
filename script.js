@@ -48,6 +48,25 @@ for (const baImage of baImages){
     })
 }
 
+//Hint Button
+
+const hintButton = document.getElementById("hint-button");
+const hint = document.getElementById("hint");
+const contactDiv = document.getElementById("contact-div");
+
+hintButton.addEventListener("mouseover", () => {
+    hint.style.opacity = 1;
+    hint.style.transform = "translateX(0px)";
+})
+
+hintButton.addEventListener("mousedown", () => {
+    contactDiv.style.opacity = 1;
+    contactDiv.style.transform = "translateY(0px)";
+    hintButton.classList.remove("hint-hover");
+})
+
+//Picture containers loops
+
 function pictureLooping(){
     const p1 = document.getElementById("p1");
     const p2 = document.getElementById("p2");
