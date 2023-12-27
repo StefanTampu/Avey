@@ -1881,6 +1881,8 @@ border: 0px outset var(--light-red);
     align-items: center;
     justify-content: center;
     transform: translateY(0px);
+    height: 1000px;
+    overflow-y: scroll;
 }
 
 .gc-img {
