@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Quattrocento:wght@400;700&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -104,39 +107,49 @@ footer {
 
 h1 {
     font-size: 60px;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 32px;
+/*    font-family: "Julius Sans One", sans-serif;*/
+    font-family: "Quatrocento", serif;
 }
 
 h2 {
     font-size: 48px;
-    text-decoration: underline;
-    font-weight: 800;
     margin-bottom: 8px;
     text-align: center;
+/*    font-family: "Julius Sans One", sans-serif;*/
+    font-family: "Quatrocento", serif;
 }
 
 h3 {
     font-size: 34px;
     font-weight: 800;
     text-align: center;
+/*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
+    font-family: 'Fanwood Text', serif;
 }
 
 h4 {
     font-size: 20px;
     text-decoration: underline;
     font-weight: 600;
+/*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
+    font-family: 'Fanwood Text', serif;
 }
 
 h5 {
     font-size: 20px;
     font-weight: 600;
+/*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
+    font-family: 'Fanwood Text', serif;
 }
 
 p,
 li {
     font-size: 20px;
+/*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
+    font-family: 'Fanwood Text', serif;
 }
 
 #index-h1,
