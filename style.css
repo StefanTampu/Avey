@@ -574,22 +574,17 @@ header .logo-container {
 }
 
 .mostep-box {
-    height: 300px;
-    width: 300px;
+    height: 275px;
+    width: 225px;
     background-color: var(--dark-blue);
-    border-radius: 32px;
+    border-radius: 0 0 32px 32px;
+    border-top: 24px double var(--red);
     box-shadow: 8px 8px 8px 0 var(--middle-blue);
     transition: 700ms ease;
 }
 
 .mostep-box:hover {
     box-shadow: none;
-}
-
-.mostep-image {
-    border-radius: 32px 32px 0 0;
-    height: 100px;
-    width: 100%;
 }
 
 .mostep-text {
@@ -1227,6 +1222,11 @@ footer > .page-container {
     
     #reasons-container img {
         height: 30px;
+    }
+
+    .mostep-box {
+        height: 225px;
+        width: 200px;
     }
 
     .is-block {
