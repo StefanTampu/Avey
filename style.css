@@ -2145,11 +2145,16 @@ border: 0px outset var(--light-red);
     width: 40%;
 }
 
+#contact-one > h5 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
 #contact-info-row {
     display: flex;
     align-items: start;
     justify-content: center;
-    gap: 150px;
+    gap: 75px;
     flex-wrap: wrap;
 }
 
@@ -2177,6 +2182,10 @@ border: 0px outset var(--light-red);
 
 #cinfo-location {
     background-image: url(Resources/icons/location.png);
+}
+
+#cinfo-insta {
+    background-image: url(Resources/icons/Instagram_Glyph_Gradient.png);
 }
 
 #contact-two {
@@ -2290,6 +2299,15 @@ border: 0px outset var(--light-red);
 }
 
 @media (max-width: 600px){
+    #contact-one h2 {
+        text-align: left;
+    }
+
+    #contact-one > h5 {
+        text-align: left;
+        margin-bottom: 32px;
+    }
+
     #contact-info-row {
         display: flex;
         flex-direction: column;
