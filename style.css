@@ -359,10 +359,10 @@ header .logo-container {
     text-align: justify;
 }
 
-#reasons-container img {
-    height: 100px;
-    width: 100px;
-    background-color: green;
+.reason-img {
+    width: 160px;
+    height: 80px;
+    overflow: auto;
 }
 
 #index-three {
