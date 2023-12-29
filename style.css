@@ -428,6 +428,14 @@ header .logo-container {
     margin: 16px 0;
 }
 
+.threed-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
 .ba-image {
     background-color: green;
     border-radius: 64px;
@@ -1808,8 +1816,8 @@ footer > .page-container {
 }
 
 #gallery-ba-container .ba-image {
-    height: 800px;
-    width: 700px;
+    height: 675px;
+    width: 540px;
     margin-bottom: 16px;
 }
 
