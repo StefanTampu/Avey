@@ -362,7 +362,6 @@ header .logo-container {
 .reason-img {
     width: 160px;
     height: 80px;
-    overflow: auto;
 }
 
 #index-three {
@@ -878,10 +877,6 @@ footer > .page-container {
         text-align: left;
     }
 
-    #reasons-container img {
-        height: 30px;
-    }
-
     .ba-image {
         height: 400px;
         width: 320px;
@@ -1018,20 +1013,28 @@ footer > .page-container {
         gap: 16px;
     }
 
+    #index-two {
+        margin-bottom: 0;
+    }
+
     #reasons-container {
         width: 100%;
-        margin: 16px 0;
-        grid-template: repeat(2, 200px) / repeat(3, 1fr);
+        grid-template: repeat(3, 150px) / repeat(2, 1fr);
         gap: 24px;
     }
     
+    .reason-img {
+        width: 20%;
+        aspect-ratio: 1/1;
+    }
+    
+    .reason-text {
+        width: 75%;
+    }
+
     .reason {
         gap: 8px;
         padding: 8px;
-    }
-    
-    #reasons-container img {
-        height: 30px;
     }
 
     #index-services-grid {
@@ -1207,6 +1210,7 @@ footer > .page-container {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        width: 100%;
     }
     
     .reason {
@@ -1215,13 +1219,9 @@ footer > .page-container {
         gap: 16px;
         padding: 16px;
     }
-    
+
     .reason-text h4 {
         text-align: left;
-    }
-    
-    #reasons-container img {
-        height: 30px;
     }
 
     .mostep-box {
