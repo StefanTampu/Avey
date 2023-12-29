@@ -296,17 +296,13 @@ header .logo-container {
     padding: 0;
 }
 
-.picture-banner {
+#index-picture-banner {
     height: 100%;
     width: 100%;
-}
-
-.picture-banner {
     background-image: url(Resources/gallery-container/basement-finish-101.jpg);
-
 }
 
-.transparent-banner {
+#index-transparent-banner {
     height: 100%;
     width: 100%;
     display: flex;
@@ -1465,20 +1461,53 @@ footer > .page-container {
 
 #about-banner {
     height: 550px;
-    padding-left: 32px;
+    padding: 0;
+}
+
+#index-banner {
+    height: 600px;
+    padding: 0;
+}
+
+#about-picture-banner {
+    height: 100%;
+    width: 100%;
+    background-color: var(--middle-blue);
+    background-image: url(Resources/gallery-container/basement-finish-101.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-transparent-banner {
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--middle-blue);
+    background: radial-gradient(ellipse at bottom, hsla(240, 20%, 96%, 0.2), hsla(234, 22%, 59%, 0.5)),
+                linear-gradient(135deg, hsla(240, 20%, 96%, 0.7) 60%, hsla(234, 100%, 29%, 0.9));
+}
+
+google {
+color: hsl(240, 20%, 96%);
+color: hsl(234, 22%, 19%);
+color: hsl(234, 100%, 29%);
+color: hsl(234, 22%, 59%);
+color: hsl(355, 73%, 56%);
+color: hsl(355, 73%, 80%);
+color: hsl(355, 100%, 56%);
+color: hsl(354, 51%, 55%);
 }
 
 #abanner-headings {
-    width: 65%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     gap: 8px;
+    padding-left: 16px;
 }
 
 #abanner-text {
