@@ -849,6 +849,15 @@ footer > .page-container {
     margin-bottom: 8px;
 }
 
+#footer-instagram-link {
+    height: 48px;
+    width: 48px;
+    background-image: url(Resources/icons/Instagram_Glyph_Gradient.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media (max-width: 2560px){
     .page-container {
         max-width: 1440px;
