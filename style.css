@@ -185,6 +185,7 @@ button {
     border: none;
     cursor: pointer;
     transition: 200ms ease-out;
+    font-family: 'Fanwood Text', serif;
 }
 
 button:hover {
@@ -328,12 +329,11 @@ header .logo-container {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
 }
 
 #i1-text h2 {
     text-align: left;
-    margin-bottom: 16px;
 }
 
 #reasons-container {
@@ -795,6 +795,7 @@ textarea {
     color: var(--dark-blue);
     padding: 6px;
     box-shadow: inset 2px 2px 4px 0 var(--dark-blue);
+    font-family: 'Fanwood Text', serif;
 }
 
 .reg-input {
@@ -1022,10 +1023,6 @@ footer > .page-container {
         gap: 16px;
     }
 
-    #i1-text h2 {
-        margin-bottom: 0;
-    }
-
     #reasons-container {
         width: 100%;
         margin: 16px 0;
@@ -1209,10 +1206,6 @@ footer > .page-container {
     #i1-text {
         width: 95%;
         gap: 8px;
-    }
-    
-    #i1-text h2 {
-        margin-bottom: 0px;
     }
 
     #reasons-container {
