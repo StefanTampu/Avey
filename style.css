@@ -1915,6 +1915,11 @@ border: 0px outset var(--light-red);
     transform: translateY(-50px);
 }
 
+.gallery-container h2 {
+    opacity: 0;
+    transition: 5s ease-in;
+}
+
 .active-gc {
     gap: 32px;
     opacity: 1;
@@ -1926,6 +1931,11 @@ border: 0px outset var(--light-red);
     transform: translateY(0px);
     height: 1000px;
     overflow-y: scroll;
+}
+
+.active-gc h2 {
+    width: 100%;
+    opacity: 1;
 }
 
 .gc-img {
