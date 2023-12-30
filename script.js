@@ -54,25 +54,29 @@ const hintButton = document.getElementById("hint-button");
 const hint = document.getElementById("hint");
 const contactDiv = document.getElementById("contact-div");
 
-hintButton.addEventListener("mouseover", () => {
-    hint.style.opacity = 1;
-    hint.style.transform = "translateX(0px)";
-})
-
-hintButton.addEventListener("mousedown", () => {
-    contactDiv.style.opacity = 1;
-    contactDiv.style.transform = "translateY(0px)";
-    hintButton.classList.remove("hint-hover");
-})
+if(hintButton){
+    hintButton.addEventListener("mouseover", () => {
+        hint.style.opacity = 1;
+        hint.style.transform = "translateX(0px)";
+    })
+    
+    hintButton.addEventListener("mousedown", () => {
+        contactDiv.style.opacity = 1;
+        contactDiv.style.transform = "translateY(0px)";
+        hintButton.classList.remove("hint-hover");
+    })
+}
 
 //Banner looping
 
 const indexPictureBanner = document.getElementById("index-picture-banner");
 const aboutPictureBanner = document.getElementById("about-picture-banner");
+const contactPictureBanner = document.getElementById("ch-picture-text");
 
 function bannerLooping(){
     const indexPictures = ["ib1-basement-finish", "ib2-bath-renovation", "ib3-kitchen-renovation", "ib4-bath-renovation", "ib5-basement-finish", "ib6-kitchen-renovation", "ib7-bath-renovation"];
     const aboutPictures = ["ab1-bath-renovation", "ab2-kitchen-renovation", "ab3-bath-renovation", "ab4-basement-finish", "ab5-bath-renovation"];
+    const contactPictures = ["cb1-kitchen-renovation", "cb2-basement-finish", "cb3-bath-renovation"];
 
     let a = 0;
 
@@ -85,6 +89,10 @@ function bannerLooping(){
             a++;
             let b = a%aboutPictures.length;
             aboutPictureBanner.style.backgroundImage = `url(Resources/banner-about/${aboutPictures[b]}.jpg)`;
+        } else if (contactPictureBanner){
+            a++;
+            let b = a%contactPictures.length;
+            contactPictureBanner.style.backgroundImage = `url(Resources/banner-contact/${contactPictures[b]}.jpg)`;
         }
     }, 3000);
 }
