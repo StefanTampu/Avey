@@ -1810,9 +1810,22 @@ color: hsl(354, 51%, 55%);
 #services-list img {
     box-sizing: border-box;
     height: 100%;
+    width: 100%;
     grid-column: span 2;
-    background-color: green;
     border: 8px outset var(--dark-blue);
+}
+
+#service-empty {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-blue);
+    border: 8px outset var(--dark-blue);
+    grid-column: span 2;
+    color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .threed-container {
