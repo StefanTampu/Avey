@@ -65,6 +65,33 @@ hintButton.addEventListener("mousedown", () => {
     hintButton.classList.remove("hint-hover");
 })
 
+//Banner looping
+
+const indexPictureBanner = document.getElementById("index-picture-banner");
+const aboutPictureBanner = document.getElementById("about-picture-banner");
+
+function bannerLooping(){
+    const indexPictures = ["ib1-basement-finish", "ib2-bath-renovation", "ib3-kitchen-renovation", "ib4-bath-renovation", "ib5-basement-finish", "ib6-kitchen-renovation", "ib7-bath-renovation"];
+    const aboutPictures = ["ab1-bath-renovation", "ab2-kitchen-renovation", "ab3-bath-renovation", "ab4-basement-finish", "ab5-bath-renovation"];
+
+    let a = 0;
+
+    setInterval(function(){
+        if(indexPictureBanner){
+            a++;
+            let b = a%indexPictures.length;
+            indexPictureBanner.style.backgroundImage = `url(Resources/banner-index/${indexPictures[b]}.jpg)`;
+        } else if (aboutPictureBanner){
+            a++;
+            let b = a%aboutPictures.length;
+            aboutPictureBanner.style.backgroundImage = `url(Resources/banner-about/${aboutPictures[b]}.jpg)`;
+        }
+    }, 3000);
+}
+
+bannerLooping();
+
+
 //Picture containers loops
 
 function pictureLooping(){

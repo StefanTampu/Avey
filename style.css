@@ -136,6 +136,7 @@ h4 {
     font-weight: 600;
 /*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
     font-family: 'Fanwood Text', serif;
+    margin-bottom: 8px;
 }
 
 h5 {
@@ -299,7 +300,12 @@ header .logo-container {
 #index-picture-banner {
     height: 100%;
     width: 100%;
-    background-image: url(Resources/gallery-container/basement-finish-101.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Resources/banner-index/ib1-basement-finish.jpg);
+    overflow: hidden;
+    transition: 800ms ease-in;
 }
 
 #index-transparent-banner {
@@ -751,6 +757,7 @@ color: hsl(354, 51%, 55%);
 
 .review-box h4 {
     font-size: 27px;
+    margin-bottom: 0;
 }
 
 .stars {
@@ -1464,19 +1471,14 @@ footer > .page-container {
     padding: 0;
 }
 
-#index-banner {
-    height: 600px;
-    padding: 0;
-}
-
 #about-picture-banner {
     height: 100%;
     width: 100%;
-    background-color: var(--middle-blue);
-    background-image: url(Resources/gallery-container/basement-finish-101.jpg);
+    background-image: url(Resources/banner-about/ab1-bath-renovation.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 800ms ease-in;
 }
 
 #about-transparent-banner {
