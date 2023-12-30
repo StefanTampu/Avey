@@ -914,6 +914,10 @@ footer > .page-container {
     margin-bottom: 8px;
 }
 
+.footer-group a h4 {
+    margin-bottom: -8px;
+}
+
 #footer-instagram-link {
     height: 48px;
     width: 48px;
