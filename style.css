@@ -1705,8 +1705,8 @@ footer > .page-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(135deg, hsla(240, 20%, 96%, 0.7) 60%, hsla(234, 100%, 29%, 0.7)),
-                linear-gradient(hsla(355, 100%, 56%, 0.6), hsla(355, 73%, 80%, 0.3));
+    background: radial-gradient(ellipse at bottom, hsla(240, 20%, 96%, 0.2), hsla(234, 22%, 59%, 0.8)),
+                linear-gradient(hsla(355, 100%, 56%, 0.6), hsla(355, 73%, 80%, 0.2));
 }
 
 #abanner-headings {
