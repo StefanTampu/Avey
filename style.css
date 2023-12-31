@@ -2432,6 +2432,10 @@ footer > .page-container {
         transition: 1s;
     }
 
+    .gallery-contact-active {
+        margin-top: 0px;
+    }
+
     #gid-exit {
         right: 64px;
     }
