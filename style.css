@@ -2652,8 +2652,8 @@ footer > .page-container {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    background: linear-gradient(235deg, hsla(240, 20%, 96%, 0.6) 60%, hsla(234, 100%, 29%, 0.9)),
-                linear-gradient(45deg, hsla(355, 100%, 56%, 0.8), hsla(355, 73%, 80%, 0.3));
+    background: linear-gradient(55deg, hsla(240, 20%, 96%, 0.6) 60%, hsla(234, 100%, 29%, 0.7)),
+                linear-gradient(315deg, hsla(355, 100%, 56%, 0.8), hsla(355, 73%, 80%, 0.3));
 }
 
 #contact-page-form {
@@ -2774,6 +2774,7 @@ footer > .page-container {
 
 @media (max-width: 1024px){
     #contact-hero {
+        height: 1200px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -2792,7 +2793,10 @@ footer > .page-container {
 
     #ch-picture-text {
         height: 500px;
-        border-bottom: 16px solid var(--light-blue);
+    }
+
+    #contact-page-form {
+        height: 700px;
     }
     
     #contact-info-row {
@@ -2822,8 +2826,16 @@ footer > .page-container {
 }
 
 @media (max-width: 768px){
+    #contact-hero {
+        height: 1000px;
+    }
+
     #ch-picture-text {
         height: 400px;
+    }
+
+    #contac-page-form {
+        height: 600px;
     }
 
     .cinfo-img {
