@@ -1666,7 +1666,7 @@ footer > .page-container {
 /*About.html*/
 
 #about-banner {
-    height: 550px;
+    height: 1000px;
     padding: 0;
 }
 
@@ -1691,31 +1691,31 @@ footer > .page-container {
 }
 
 #abanner-headings {
-    width: 55%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     gap: 8px;
-    padding-left: 16px;
+    padding-left: 48px;
 }
 
 #abanner-text {
     box-sizing: content-box;
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
     background-color: var(--light-blue);
-    padding: 16px 32px;
-    border-radius: 0 0 0 64px;
-    box-shadow: inset 6px 6px 4px var(--dark-blue);
+    padding: 24px 64px;
+    border-radius: 0 0 0 128px;
+    box-shadow: inset 8px 8px 6px var(--dark-blue);
 }
 
 #abanner-text h5 {
-    font-size: 24px;
+    font-size: 40px;
 }
 
 #about-one {
@@ -1725,7 +1725,7 @@ footer > .page-container {
 }
 
 #about-projects {
-    width: 50%;
+    width: 60%;
     text-align: justify;
 }
 
@@ -1735,7 +1735,7 @@ footer > .page-container {
 
 #about-pictures {
     height: 100%;
-    width: 40%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -1743,15 +1743,15 @@ footer > .page-container {
 
 #pictures-container {
     display: grid;
-    grid-template: repeat(2, 200px) / repeat(2, 200px);
+    grid-template: repeat(2, 400px) / repeat(2, 400px);
     align-content: center;
     justify-content: center;
     gap: 16px;
 }
 
 .picture {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     box-sizing: border-box;
     background-position: center;
     background-size: cover;
@@ -1766,11 +1766,10 @@ footer > .page-container {
 }
 
 #about-warranty > .page-container {
-    width: 60%;
+    width: 50%;
     background-color: var(--light-blue);
     padding: 32px;
     margin-bottom: 0px;
-    padding: 32px;
     text-align: justify;
     border-radius: 32px;
     outline: none;
@@ -1778,7 +1777,46 @@ footer > .page-container {
 }
 
 @media (max-width: 2560px){
+    #about-banner {
+        height: 550px;
+    }
 
+    #abanner-headings {
+        width: 55%;
+        padding-left: 16px;
+    }
+
+    #abanner-text {
+        width: 35%;
+        padding: 16px 32px;
+        border-radius: 0 0 0 64px;
+        box-shadow: inset 6px 6px 4px var(--dark-blue);
+    }
+
+    #abanner-text h5 {
+        font-size: 24px;
+    }
+
+    #about-projects {
+        width: 50%;
+    }
+
+    #about-pictures {
+        width: 40%;
+    }
+
+    #pictures-container {
+        grid-template: repeat(2, 200px) / repeat(2, 200px);
+    }
+    
+    .picture {
+        height: 200px;
+        width: 200px;
+    }
+
+    #about-warranty > .page-container {
+        width: 60%;
+    }
 }
 
 @media (max-width: 1440px){
