@@ -62,18 +62,18 @@ table {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
-    border-right: 7px solid rgba(0, 0, 0, 0.01);
+    width: 16px;
+    border-right: 10px solid rgba(0, 0, 0, 0.01);
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
+    -webkit-box-shadow: inset 0 0 9px var(--dark-blue); 
     background-color: var(--light-blue);
     position: absolute;
 }
 
 ::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
+    -webkit-box-shadow: inset 0 0 9px var(--dark-blue); 
     background-color: var(--middle-blue);
 }
 
@@ -106,7 +106,7 @@ footer {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 68px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 32px;
@@ -115,7 +115,7 @@ h1 {
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 56px;
     margin-bottom: 8px;
     text-align: center;
 /*    font-family: "Julius Sans One", sans-serif;*/
@@ -123,7 +123,7 @@ h2 {
 }
 
 h3 {
-    font-size: 34px;
+    font-size: 42px;
     font-weight: 800;
     text-align: center;
 /*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
@@ -131,7 +131,7 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 34px;
     text-decoration: underline;
     font-weight: 600;
 /*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
@@ -140,7 +140,7 @@ h4 {
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 34px;
     font-weight: 600;
 /*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
     font-family: 'Fanwood Text', serif;
@@ -148,7 +148,7 @@ h5 {
 
 p,
 li {
-    font-size: 20px;
+    font-size: 34px;
 /*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
     font-family: 'Fanwood Text', serif;
 }
@@ -169,17 +169,17 @@ li {
 a {
     color: inherit;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 34px;
 }
 
 button {
-    font-size: 20px;
+    font-size: 34px;
     color: var(--light-blue);
     background-color: var(--red);
     text-decoration: underline;
     font-variant: small-caps;
-    padding: 6px 16px;
-    border-radius: 16px;
+    padding: 8px 20px;
+    border-radius: 32px;
     font-weight: 600;
     outline: none;
     border: none;
@@ -191,7 +191,7 @@ button {
 button:hover {
     text-decoration: none;
     background-color: var(--strong-red);
-    text-shadow: 0 0 2px var(--light-blue);
+    text-shadow: 0 0 4px var(--light-blue);
 }
 
 nav {
@@ -213,8 +213,8 @@ header .logo-container {
 }
 
 #nav-logo {
-    height: 80px;
-    width: 100px;
+    height: 120px;
+    width: 150px;
     background-image: url(Resources/Avey-logo-removebg-preview.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +247,7 @@ header .logo-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    gap: 36px;
     z-index: 20;
 }
 
@@ -263,14 +263,14 @@ header .logo-container {
 
 .reg-nav:hover {
     text-decoration: none;
-    text-shadow: 0 0 2px var(--middle-blue);
+    text-shadow: 0 0 4px var(--middle-blue);
 }
 
 #call-container {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    transform: translateY(14px);
+    transform: translateY(20px);
 }
 
 #nav-call {
@@ -290,9 +290,80 @@ header .logo-container {
     transition: 500ms ease-out;
 }
 
+@media (max-width: 2560px){
+    .page-container {
+        max-width: 1440px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+        border-right: 7px solid rgba(0, 0, 0, 0.01);
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 9px var(--dark-blue); 
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 32px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+
+    h4,
+    h5,
+    p,
+    li,
+    a {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 6px 16px;
+        border-radius: 16px;
+    }
+    
+    button:hover {
+        text-shadow: 0 0 2px var(--light-blue);
+    }
+
+    #nav-logo {
+        height: 80px;
+        width: 100px;
+    }
+
+    #nav-links {
+        gap: 24px;
+    }
+
+    .reg-nav:hover {
+        text-shadow: 0 0 2px var(--middle-blue);
+    }
+
+    #call-container {
+    transform: translateY(14px);
+    }
+
+    #nav-call {
+        margin-bottom: 12px;
+    }
+}
+
 /*Index.html*/
 #index-banner {
-    height: 600px;
+    height: 1000px;
     padding: 0;
 }
 
@@ -317,7 +388,6 @@ header .logo-container {
 
 #ibanner-text {
     width: 50%;
-    padding-left: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,7 +395,8 @@ header .logo-container {
     gap: 8px;
     background: linear-gradient(90deg, hsl(240, 20%, 96%, 1), hsla(240, 20%, 96%, 0.7));
     padding: 16px;
-    border-radius: 0 16px 16px 0;
+    padding-left: 48px;
+    border-radius: 0 36px 36px 0;
 }
 
 #index-one {
@@ -333,11 +404,11 @@ header .logo-container {
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 
 #index-one img {
-    height: 500px;
+    height: 600px;
     width: 35%;
     background-color: green;
 }
@@ -356,12 +427,16 @@ header .logo-container {
     text-align: left;
 }
 
+#i1-text button {
+    margin-top: 16px;
+}
+
 #reasons-container {
-    margin: 32px 0;
+    margin-top: 16px;
     display: grid;
-    grid-template: repeat(2, 150px) / repeat(3, 1fr);
+    grid-template: repeat(2, 200px) / repeat(3, 1fr);
     justify-content: space-around;
-    gap: 16px;
+    gap: 36px;
 }
 
 .reason {
@@ -380,8 +455,8 @@ header .logo-container {
 }
 
 .reason-img {
-    width: 160px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
 }
 
 #index-three {
@@ -397,8 +472,8 @@ header .logo-container {
     width: 100%;
     background-color: var(--light-blue);
     display: grid;
-    grid-template: repeat(2, 200px) / repeat(5, 1fr);
-    gap: 8px;
+    grid-template: repeat(2, 300px) / repeat(5, 1fr);
+    gap: 16px;
 }
 
 .is-block {
@@ -408,7 +483,7 @@ header .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 8px outset var(--dark-blue);
+    border: 16px outset var(--dark-blue);
     cursor: default;
     transition: 200ms ease-in;
     background-position: center;
@@ -446,16 +521,12 @@ header .logo-container {
 }
 
 .is-block h4 {
-    font-size: 27px;
+    font-size: 42px;
     text-decoration: none;
-    background-color: #26283B;
+    background-color: hsla(234, 22%, 19%, 0.8);
     transition: 800ms ease-in;
     padding: 16px 32px;
     border-radius: 16px;
-}
-
-.is-block > div:hover > h4 {
-    background-color: hsla(234, 22%, 19%, 0.8);
 }
 
 .empty-block {
@@ -484,14 +555,6 @@ header .logo-container {
     margin: 16px 0;
 }
 
-.threed-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 64px;
-}
-
 .ba-image {
     background-color: green;
     border-radius: 64px;
@@ -500,9 +563,9 @@ header .logo-container {
     position: relative;
     overflow: hidden;
     --position: 50%;
-    height: 500px;
-    width: 400px;
-    box-shadow: 8px 8px 8px 0 var(--middle-blue);
+    height: 750px;
+    width: 600px;
+    box-shadow: 12px 12px 12px 0 var(--middle-blue);
     transition: 800ms;
 }
 
@@ -556,8 +619,8 @@ header .logo-container {
     position: absolute;
     text-decoration: none;
     border-radius: 100vw;
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     padding: 0px;
     top: 50%;
     left: var(--position);
@@ -567,78 +630,19 @@ header .logo-container {
     border: 4px outset var(--red);
 }
 
-/*.ba-line {
-    height: 100%;
-    width: 16px;
-    background-color: var(--red);
-    left: 50%;
-    position: absolute;
-    z-index: 3;
-    cursor:grab;
-}
-
-.ba-line:active {
-    cursor: grabbing;
-}
-
-.ba-before,
-.ba-after {
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-}
-
-.ba-before {
-    max-width: 100%;
-    min-width: 0%;
-    width: 50%;
-    z-index: 2;
-    background-image: url();
-    background-image: url(Resources/Try1.jpg);
-}
-
-.ba-after {
-    width: 100%;
-    z-index: 1;
-    background-image: url(Resources/Try2.jpg);
-}
-
-.img-before,
-.img-after {
-    height: 500px;
-    width: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img-before {
-    background-image: url(Resources/Try1.jpg);
-    background-position: left;
-}
-
-.img-after {
-    background-image: url(Resources/Try2.jpg);
-    background-position: center;
-    transform: translateX(-200px);
-}*/
-
 #makeover-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 48px;
     margin: 16px 0;
 }
 
 .mostep-box {
-    height: 275px;
-    width: 225px;
+    height: 450px;
+    width: 400px;
     background-color: var(--dark-blue);
     border-radius: 0 0 32px 32px;
     border-top: 24px double var(--red);
@@ -680,45 +684,45 @@ header .logo-container {
 }
 
 #reviews-section {
-    height: 400px;
+    height: 700px;
     padding: 16px 0 0 0;
-    max-width: 5000px;
+    max-width: 7000px;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
 #reviews-container {
-    height: 400px;
+    height: 700px;
     display: grid;
-    grid-template-columns: repeat(3, 500px);
-    grid-auto-columns: 500px;
+    grid-template-columns: repeat(3, 700px);
+    grid-auto-columns: 700px;
     grid-auto-flow: column;
     overflow-x: auto;
 }
 
 #reviews-container::-webkit-scrollbar {
-    height: 16px;
+    height: 24px;
 }
 
 #reviews-container::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius: 22px;
 }
 
 #reviews-container::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 22px;
 }
 
 .review-box {
-    height: 300px;
-    width: 400px;
+    height: 550px;
+    width: 550px;
     background-color: var(--light-blue);
     color: var(--dark-blue);
     padding: 32px;
     text-align: justify;
     border-radius: 32px;
     outline: none;
-    box-shadow: inset 4px 4px 8px 0 var(--dark-blue);
+    box-shadow: inset 8px 8px 12px 0 var(--dark-blue);
     position: relative;
 }
 
@@ -727,7 +731,7 @@ header .logo-container {
 }
 
 .overflow-review::-webkit-scrollbar {
-    width: 20px;
+    width: 26px;
 }
 
 .overflow-review::-webkit-scrollbar-track {
@@ -740,11 +744,11 @@ header .logo-container {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px var(--dark-blue); 
     background-color: var(--middle-blue);
-    border: 4px solid var(--light-blue); /*Add this to make scrollbar look like it's pushed off the wall"*/
+    border: 6px solid var(--light-blue); /*Add this to make scrollbar look like it's pushed off the wall"*/
 }
 
 .review-box h4 {
-    font-size: 27px;
+    font-size: 40px;
     margin-bottom: 0;
 }
 
@@ -755,31 +759,31 @@ header .logo-container {
 
 .rev-link {
     position: absolute;
-    top: 64px;
-    right: 16px;
+    top: 48px;
+    right: 24px;
 }
 
 .rev-link button {
     text-decoration: none;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 40px;
     display: flex;
     align-items: center;
-    padding: 0 24px;
+    padding: 4px 36px 0 36px;
 }
 
 #contact-section {
     display: flex;
     justify-content: space-around;
     align-items: start;
-    gap: 32px;
+    gap: 64px;
 }
 
 #hint-container {
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 8px;
+    gap: 16px;
 }
 
 #hint {
@@ -787,17 +791,17 @@ header .logo-container {
     transition: 500ms ease;
     font-variant: small-caps;
     opacity: 0;
-    transform: translateX(-10px);
+    transform: translateX(-15px);
     transition: 1s ease;
 }
 
 #hint-button {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     border-radius: 100vh;
     text-decoration: none;
-    box-shadow: 4px 4px 4px 0 var(--light-red);
-    border: 8px outset var(--red);
+    box-shadow: 8px 8px 8px 0 var(--light-red);
+    border: 12px outset var(--red);
     transition: 500ms ease;
 }
 
@@ -818,23 +822,23 @@ header .logo-container {
 }
 
 .contact-form {
-    height: 600px;
+    height: 800px;
     flex: 2;
     background-color: var(--dark-blue);
     color: var(--light-blue);
-    padding: 32px;
-    border: 8px outset var(--dark-blue);
+    padding: 48px;
+    border: 16px outset var(--dark-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
 }
 
 fieldset {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     width: 100%;
 }
 
@@ -847,13 +851,13 @@ textarea {
     box-sizing: border-box;
     border: none;
     outline: none;
-    height: 36px;
+    height: 48px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 36px;
     background-color: var(--light-blue);
     color: var(--dark-blue);
     padding: 6px;
-    box-shadow: inset 2px 2px 4px 0 var(--dark-blue);
+    box-shadow: inset 4px 4px 6px 0 var(--dark-blue);
     font-family: 'Fanwood Text', serif;
 }
 
@@ -862,7 +866,7 @@ textarea {
 }
 
 textarea {
-    height: 260px;
+    height: 350px;
     resize: none;
 }
 
@@ -875,7 +879,7 @@ textarea {
 footer {
     background-color: var(--dark-blue);
     color: var(--light-blue);
-    border-top: 8px outset var(--dark-blue);
+    border-top: 16px outset var(--dark-blue);
 }
 
 footer > .page-container {
@@ -886,13 +890,13 @@ footer > .page-container {
 }
 
 #footer-logo {
-    height: 100px;
-    width: 125px;
+    height: 160px;
+    width: 200px;
     background-image: url(Resources/Avey-logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 .footer-group {
@@ -902,12 +906,12 @@ footer > .page-container {
 }
 
 .footer-group h3 {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 #footer-about {
-    width: 300px;
+    width: 550px;
 }
 
 .footer-group a {
@@ -928,8 +932,211 @@ footer > .page-container {
 }
 
 @media (max-width: 2560px){
-    .page-container {
-        max-width: 1440px;
+    #index-banner {
+        height: 600px;
+    }
+    
+    #ibanner-text {
+        width: 70%;
+        padding-left: 32px;
+    }
+
+    #index-one {
+        margin-bottom: 32px;
+    }
+
+    #index-one img {
+        height: 500px;
+    }
+
+    #i1-text button {
+        margin-top: 0;
+    }
+
+    #reasons-container {
+        margin: 0;
+        grid-template: repeat(2, 150px) / repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .reason-img {
+        width: 160px;
+        height: 80px;
+    }
+
+    #index-services-grid {
+        grid-template: repeat(2, 200px) / repeat(5, 1fr);
+        gap: 8px;
+    }
+
+    .is-block {
+        border: 8px outset var(--dark-blue);
+    }
+
+    .is-block h4 {
+        font-size: 27px;
+    }
+
+    .ba-image {
+        height: 500px;
+        width: 400px;
+        box-shadow: 8px 8px 8px 0 var(--middle-blue);
+    }
+
+    .slider-button {
+        height: 60px;
+        width: 60px;
+    }
+
+    #makeover-container {
+        gap: 16px;
+    }
+
+    .mostep-box {
+        height: 275px;
+        width: 225px;
+    }
+
+    #reviews-section {
+        height: 500px;
+        max-width: 5000px;
+    }
+
+    #reviews-container {
+        height: 450px;
+        grid-template-columns: repeat(3, 500px);
+        grid-auto-columns: 500px;
+    }
+
+    #reviews-container::-webkit-scrollbar {
+        height: 16px;
+    }
+    
+    #reviews-container::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+    
+    #reviews-container::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+    }
+
+    .review-box {
+        height: 300px;
+        width: 400px;
+        box-shadow: inset 4px 4px 8px 0 var(--dark-blue);
+    }
+    
+    .overflow-review::-webkit-scrollbar {
+        width: 20px;
+    }
+    
+    .overflow-review::-webkit-scrollbar-thumb {
+        border: 4px solid var(--light-blue); /*Add this to make scrollbar look like it's pushed off the wall"*/
+    }
+    
+    .review-box h4 {
+        font-size: 27px;
+    }
+    
+    .rev-link {
+        top: 64px;
+        right: 16px;
+    }
+    
+    .rev-link button {
+        font-size: 24px;
+        padding: 0 24px;
+    }
+
+    #contact-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        gap: 32px;
+    }
+    
+    #hint-container {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 8px;
+    }
+    
+    #hint {
+        color: var(--red);
+        transition: 500ms ease;
+        font-variant: small-caps;
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: 1s ease;
+    }
+    
+    #hint-button {
+        height: 50px;
+        width: 50px;
+        border-radius: 100vh;
+        text-decoration: none;
+        box-shadow: 4px 4px 4px 0 var(--light-red);
+        border: 8px outset var(--red);
+        transition: 500ms ease;
+    }
+    
+    #hint-container:hover > #hint {
+        color: var(--strong-red);
+        text-shadow: 0 0 4px var(--light-red);
+    }
+    
+    #hint-button:hover {
+        box-shadow: none;
+        border: 0px outset var(--light-red);
+    }
+    
+    #contact-div {
+        transform: translateY(-30px);
+        opacity: 0;
+        transition: 700ms ease-in;
+    }
+    
+    .contact-form {
+        height: 600px;
+        padding: 32px;
+        border: 8px outset var(--dark-blue);
+        gap: 16px;
+    }
+    
+    fieldset {
+        gap: 16px;
+        width: 100%;
+    }
+    
+    .contact-form input,
+    textarea {
+        height: 36px;
+        font-size: 20px;
+        padding: 6px;
+        box-shadow: inset 2px 2px 4px 0 var(--dark-blue);
+    }
+    
+    textarea {
+        height: 260px;
+    }
+
+    footer {
+        border-top: 8px outset var(--dark-blue);
+    }
+    
+    #footer-logo {
+        height: 100px;
+        width: 125px;
+        border-radius: 12px;
+    }
+    
+    .footer-group h3 {
+        margin-bottom: 16px;
+    }
+    
+    #footer-about {
+        width: 300px;
     }
 }
 
@@ -1481,17 +1688,6 @@ footer > .page-container {
     justify-content: space-between;
     background: radial-gradient(ellipse at bottom, hsla(240, 20%, 96%, 0.2), hsla(234, 22%, 59%, 0.5)),
                 linear-gradient(135deg, hsla(240, 20%, 96%, 0.7) 60%, hsla(234, 100%, 29%, 0.9));
-}
-
-google {
-color: hsl(240, 20%, 96%);
-color: hsl(234, 22%, 19%);
-color: hsl(234, 100%, 29%);
-color: hsl(234, 22%, 59%);
-color: hsl(355, 73%, 56%);
-color: hsl(355, 73%, 80%);
-color: hsl(355, 100%, 56%);
-color: hsl(354, 51%, 55%);
 }
 
 #abanner-headings {
