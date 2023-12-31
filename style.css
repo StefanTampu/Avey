@@ -1521,8 +1521,8 @@ footer > .page-container {
         width: 200px;
     }
 
-    .is-block {
-        padding-left: 8px;
+    .is-block h4 {
+        padding: 8px 16px;
     }
 
     .contact-form {
@@ -1551,8 +1551,7 @@ footer > .page-container {
     textarea {
         height: 260px;
         resize: none;
-    }
-    
+    }    
 
     footer > .page-container {
         display: flex;
