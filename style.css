@@ -485,7 +485,6 @@ header .logo-container {
 }
 
 .ba-image {
-    background-color: green;
     border-radius: 64px;
     display: grid;
     place-content: center;
@@ -519,6 +518,12 @@ header .logo-container {
     position: absolute;
     inset: 0;
     width: var(--position);
+    z-index: 2;
+}
+
+.ba-after {
+    position: absolute;
+    inset: 0;
 }
 
 .slider {
@@ -2152,7 +2157,17 @@ footer > .page-container {
 
 @media (max-width: 768px){
     #services-list {
-        grid-template-rows: repeat(4, 450px);
+        grid-template-rows: 300px 200px repeat(2, 300px) 200px 300px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sl-text {
+        grid-column: span 2;
+    }
+    
+    #services-list img,
+    #service-empty {
+        grid-column: span 1;
     }
 
     .sl-text {
@@ -2164,14 +2179,6 @@ footer > .page-container {
     #services-list {
         grid-template-rows: 360px 200px repeat(2, 360px) 200px 360px;
         grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .sl-text {
-        grid-column: span 2;
-    }
-    
-    #services-list img {
-        grid-column: span 1;
     }
 }
 
