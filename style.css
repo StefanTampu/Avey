@@ -1863,14 +1863,27 @@ footer > .page-container {
         height: 750px;
         padding-left: 16px;
     }
+
+    #about-transparent-banner {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+    }
     
     #abanner-headings {
-        width: 60%;
+        align-self: flex-start;
+        width: 90%;
     }
     
     #abanner-text {
-        width: 40%;
-        padding: 32px 16px;
+        box-sizing: border-box;
+        width: 80%;
+        padding: 16px 32px;
+        height: 20%;
+        align-self: flex-end;
     }
 
     #about-one {
@@ -1910,28 +1923,21 @@ footer > .page-container {
 
 @media (max-width: 768px){
     #about-banner {
-        height: 600px;
+        height: 500px;
         padding-left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
     }
 
     #abanner-headings {
         box-sizing: border-box;
         padding-left: 16px;
         width: 100%;
-        height: 65%;
+        height: 70%;
     }
     
     #abanner-text {
-        box-sizing: border-box;
         width: 90%;
-        padding: 16px 32px;
-        height: 30%;
+        height: 25%;
         margin-bottom: 48px;
-        align-self: flex-end;
     }
 
     #abanner-text h5 {
@@ -1998,6 +2004,7 @@ footer > .page-container {
         padding-left: 16px;
         width: 100%;
         height: 40%;
+        margin-top: 32px;
     }
     
     #abanner-text {
@@ -2009,10 +2016,15 @@ footer > .page-container {
 @media (max-width: 375px){
     #about-banner {
         height: 800px;
+        margin-top: none;
     }
 
     #abanner-headings {
         padding: 0 16px;
+    }
+
+    #abanner-text {
+        height: 30%;
     }
 
     #pictures-container {
