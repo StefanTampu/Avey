@@ -1143,6 +1143,11 @@ footer > .page-container {
         width: 50%;
     }
 
+    #reasons-container {
+        grid-template: repeat(2, 170px) / repeat(3, 1fr);
+        gap: 8px;
+    }
+
     .reason-text h4 {
         text-align: left;
     }
