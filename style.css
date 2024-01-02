@@ -132,8 +132,7 @@ h3 {
 
 h4 {
     font-size: 34px;
-    text-decoration: underline;
-    font-weight: 600;
+    font-weight: 700;
 /*    font-family: "Crimson Text", Georgia, 'Times New Roman', Times, serif;*/
     font-family: 'Fanwood Text', serif;
     margin-bottom: 8px;
@@ -176,7 +175,6 @@ button {
     font-size: 34px;
     color: var(--light-blue);
     background-color: var(--red);
-    text-decoration: underline;
     font-variant: small-caps;
     padding: 8px 20px;
     border-radius: 32px;
@@ -189,7 +187,6 @@ button {
 }
 
 button:hover {
-    text-decoration: none;
     background-color: var(--strong-red);
     text-shadow: 0 0 4px var(--light-blue);
 }
@@ -257,12 +254,7 @@ header .logo-container {
     font-weight: 600;
 }
 
-.reg-nav {
-    text-decoration: underline;
-}
-
 .reg-nav:hover {
-    text-decoration: none;
     text-shadow: 0 0 4px var(--middle-blue);
 }
 
@@ -370,8 +362,8 @@ header .logo-container {
 
 .reason {
     display: flex;
-    justify-content: space-between;
-    gap: 16px;
+    justify-content: space-around;
+    align-items: start;
     padding: 16px;
 }
 
@@ -384,8 +376,12 @@ header .logo-container {
 }
 
 .reason-img {
-    width: 200px;
-    height: 100px;
+    width: 12%;
+    aspect-ratio: 1/1;
+}
+
+.reason-text {
+    width: 85%;
 }
 
 #index-three {
@@ -451,7 +447,6 @@ header .logo-container {
 
 .is-block h4 {
     font-size: 42px;
-    text-decoration: none;
     background-color: hsla(234, 22%, 19%, 0.8);
     transition: 800ms ease-in;
     padding: 16px 32px;
@@ -551,7 +546,6 @@ header .logo-container {
 
 .slider-button {
     position: absolute;
-    text-decoration: none;
     border-radius: 100vw;
     height: 100px;
     width: 100px;
@@ -698,7 +692,6 @@ header .logo-container {
 }
 
 .rev-link button {
-    text-decoration: none;
     font-weight: 900;
     font-size: 40px;
     display: flex;
@@ -733,7 +726,6 @@ header .logo-container {
     height: 75px;
     width: 75px;
     border-radius: 100vh;
-    text-decoration: none;
     box-shadow: 8px 8px 8px 0 var(--light-red);
     border: 12px outset var(--red);
     transition: 500ms ease;
@@ -962,11 +954,6 @@ footer > .page-container {
         gap: 16px;
     }
 
-    .reason-img {
-        width: 160px;
-        height: 80px;
-    }
-
     #index-services-grid {
         grid-template: repeat(2, 200px) / repeat(5, 1fr);
         gap: 8px;
@@ -1078,7 +1065,6 @@ footer > .page-container {
         height: 50px;
         width: 50px;
         border-radius: 100vh;
-        text-decoration: none;
         box-shadow: 4px 4px 4px 0 var(--light-red);
         border: 8px outset var(--red);
         transition: 500ms ease;
@@ -1312,12 +1298,11 @@ footer > .page-container {
     }
     
     .reason-img {
-        width: 20%;
-        aspect-ratio: 1/1;
+        width: 10%;
     }
     
     .reason-text {
-        width: 75%;
+        width: 85%;
     }
 
     .reason {
@@ -1508,10 +1493,6 @@ footer > .page-container {
         padding: 16px;
     }
 
-    .reason-img {
-        width: 15%;
-    }
-
     .reason-text h4 {
         text-align: left;
     }
@@ -1590,10 +1571,6 @@ footer > .page-container {
         height: 300px;
     }
 
-    .reason-img {
-        width: 20%;
-    }
-
     #index-services-grid {
         grid-template: repeat(4, 200px) / repeat(3, 1fr);
     }
@@ -1664,7 +1641,7 @@ footer > .page-container {
     }
 
     .reason-img {
-        width: 25%;
+        width: 10%;
     }
 
     .review-box {
@@ -2277,7 +2254,6 @@ footer > .page-container {
     height: 400px;
     width: 400px;
     border-radius: 100vh;
-    text-decoration: none;
     box-shadow: 8px 8px 24px 0 var(--light-red);
     border: 16px outset var(--red);
     transition: 500ms ease;
@@ -2289,10 +2265,6 @@ footer > .page-container {
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
-}
-
-.gallery-button span {
-    text-decoration: underline;
 }
 
 .gallery-button:hover {
