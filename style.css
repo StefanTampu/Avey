@@ -397,14 +397,12 @@ header .logo-container {
     width: 100%;
     background-color: var(--light-blue);
     display: grid;
-    grid-template: repeat(2, 300px) / repeat(5, 1fr);
-    gap: 16px;
+    grid-template: repeat(2, 450px) / repeat(2, 1fr);
+    gap: 24px;
 }
 
 .is-block {
-    background-color: var(--dark-blue);
     color: var(--light-blue);
-    grid-column: span 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -431,22 +429,12 @@ header .logo-container {
     background-image: url(Resources/services-pictures/basement-finish-service.jpg);
 }
 
-.is-block > div {
-    width: 100%;
-    height: 100%;
-    background-color: #26283B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 800ms ease-in;
-}
-
-.is-block > div:hover {
-    background-color: hsla(234, 22%, 19%, 0);
+#condo-is-block {
+    background-color: var(--dark-blue);
 }
 
 .is-block h4 {
-    font-size: 42px;
+    font-size: 50px;
     background-color: hsla(234, 22%, 19%, 0.8);
     transition: 800ms ease-in;
     padding: 16px 32px;
@@ -955,8 +943,8 @@ footer > .page-container {
     }
 
     #index-services-grid {
-        grid-template: repeat(2, 200px) / repeat(5, 1fr);
-        gap: 8px;
+        grid-template: repeat(2, 300px) / repeat(2, 1fr);
+        gap: 16px;
     }
 
     .is-block {
@@ -964,7 +952,7 @@ footer > .page-container {
     }
 
     .is-block h4 {
-        font-size: 27px;
+        font-size: 36px;
     }
 
     .ba-image {
@@ -1316,7 +1304,12 @@ footer > .page-container {
     }
 
     #index-services-grid {
-        grid-template: repeat(2, 150px) / repeat(5, 1fr);
+        grid-template: repeat(2, 200px) / repeat(2, 1fr);
+    }
+
+    .is-block h4 {
+        font-size: 27px;
+        padding: 8px 16px;
     }
 
     #reviews-section {
@@ -1576,16 +1569,9 @@ footer > .page-container {
         height: 300px;
     }
 
-    #index-services-grid {
-        grid-template: repeat(4, 200px) / repeat(3, 1fr);
-    }
-    
-    .invisible-block {
-        display: block;
-    }
-
-    .small-invisible {
-        display: none;
+    .is-block h4 {
+        font-size: 20px;
+        padding: 8px 8px;
     }
 
     #contact-text {
