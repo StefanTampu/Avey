@@ -2157,7 +2157,7 @@ footer > .page-container {
 
 @media (max-width: 425px){
     #services-list {
-        grid-template-rows: 450px 150px repeat(2, 450px) 150px 450px;
+        grid-template-rows: 400px 150px 400px 500px 150px 400px;
     }
 }
 
@@ -2166,7 +2166,7 @@ footer > .page-container {
 
 @media (max-width: 320px){
     #services-list {
-        grid-template-rows: 550px 150px repeat(2, 550px) 150px 550px;
+        grid-template-rows: 550px 150px 550px 625px 150px 550px;
     }
 }
 
@@ -2286,7 +2286,6 @@ footer > .page-container {
 .active-gc {
     gap: 64px;
     opacity: 1;
-    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -2891,4 +2890,29 @@ footer > .page-container {
 
 @media (max-width: 320px){
 
+}
+
+/*Individual services pages*/
+
+#service-page-gallery {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 32px;
+    justify-content: center;
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+.sc-img {
+    height: 350px;
+    width: 350px;
+    opacity: 0.8;
+    transition: 500ms ease;
+}
+
+.sc-img:hover {
+    opacity: 1;
 }
