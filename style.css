@@ -2906,13 +2906,13 @@ footer > .page-container {
     overflow-y: auto;
 }
 
-.sc-img {
+#service-page-gallery .gc-img {
     height: 350px;
     width: 350px;
     opacity: 0.8;
     transition: 500ms ease;
 }
 
-.sc-img:hover {
+#service-page-gallery .gc-img:hover {
     opacity: 1;
 }
