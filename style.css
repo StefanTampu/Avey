@@ -2306,6 +2306,7 @@ footer > .page-container {
     box-shadow: 0 0 8px 0 var(--dark-blue);
     transition: 200ms ease-in;
     opacity: 0;
+    cursor: pointer;
 }
 
 .gc-img-appear {

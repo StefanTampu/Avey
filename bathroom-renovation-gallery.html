@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Resources/Avey-logo-page-icon.png">
 </head>
-<body>
+<body id="gallery-body">
+    <div id="gallery-img-display">
+        <button id="gid-exit">X</button>
+        <img id="gallery-img-popped" src="Resources/gallery-container/basement-finish-101.jpg" alt="">
+    </div>
     <header>
         <nav class="page-container">
             <a href="index.html">
@@ -35,37 +39,37 @@
     <main class="page-container">
         <h1>Avey's Bathroom Renovation Service Gallery</h1>
         <div id="service-page-gallery">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-101.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-102.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-103.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-104.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-105.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-106.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-107.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-108.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-109.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-110.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-111.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-112.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-113.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-114.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-115.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-116.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-117.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-118.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-119.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-120.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-121.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-122.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-123.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-124.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-125.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-126.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-127.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-128.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-129.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-130.jpg" alt="Bathroom Renovation Picture">
-            <img class="sc-img" src="Resources/gallery-container/bath-renovation-130.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-101.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-102.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-103.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-104.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-105.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-106.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-107.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-108.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-109.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-110.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-111.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-112.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-113.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-114.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-115.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-116.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-117.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-118.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-119.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-120.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-121.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-122.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-123.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-124.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-125.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-126.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-127.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-128.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-129.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-130.jpg" alt="Bathroom Renovation Picture">
+            <img class="gc-img" src="Resources/gallery-container/bath-renovation-130.jpg" alt="Bathroom Renovation Picture">
         </div>
     </main>
     <footer>
