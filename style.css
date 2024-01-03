@@ -211,11 +211,7 @@ nav {
     padding: 16px 0;
 }
 
-.picture-nav.page-container {
-    width: 100%;
-}
-
-.picture-nav {
+#picture-nav {
     width: 100%;
     backdrop-filter: blur(30px);
     background-color: hsla(44, 9%, 97%, 0.4);
@@ -1186,6 +1182,10 @@ footer > .page-container {
         max-width: 768px;
     }
 
+    #picture-nav > .page-container{
+        margin-bottom: 0px;
+    }
+
     .hamburger {
         display: block;
         position: absolute;
@@ -1664,8 +1664,13 @@ footer > .page-container {
 /*About.html*/
 
 #about-banner {
+    box-sizing: border-box;
     height: 1000px;
+    width: 100%;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #about-picture-banner {
@@ -1676,16 +1681,15 @@ footer > .page-container {
     background-repeat: no-repeat;
     background-size: cover;
     transition: 800ms ease-in;
+    z-index: 500;
 }
 
 #about-transparent-banner {
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: radial-gradient(ellipse at bottom, hsla(240, 20%, 96%, 0.2), hsla(234, 22%, 59%, 0.8)),
                 linear-gradient(hsla(355, 100%, 56%, 0.6), hsla(355, 73%, 80%, 0.2));
+    padding-bottom: 50px;
 }
 
 #abanner-headings {
@@ -1841,6 +1845,10 @@ footer > .page-container {
     #about-banner {
         height: 750px;
         padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
     }
 
     #about-transparent-banner {
@@ -1849,7 +1857,6 @@ footer > .page-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 48px;
     }
     
     #abanner-headings {
