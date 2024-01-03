@@ -217,6 +217,10 @@ nav {
     background-color: hsla(44, 9%, 97%, 0.4);
 }
 
+#picture-nav > .page-container{
+    margin-bottom: 0px;
+}
+
 #nav-logo {
     height: 50px;
     width: 200px;
@@ -742,7 +746,6 @@ nav {
 
 .contact-form {
     height: 800px;
-    flex: 2;
     background-color: var(--dark-blue);
     color: var(--light-blue);
     padding: 48px;
@@ -790,7 +793,6 @@ textarea {
 }
 
 #contact-text {
-    flex: 3;
     text-align: justify;
     padding-top: 150px;
 }
@@ -1180,10 +1182,6 @@ footer > .page-container {
 @media (max-width: 1024px){
     .page-container {
         max-width: 768px;
-    }
-
-    #picture-nav > .page-container{
-        margin-bottom: 0px;
     }
 
     .hamburger {
@@ -2601,17 +2599,8 @@ footer > .page-container {
 
 /*Contact.html*/
 
-#contact-hero {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    height: 1000px;
-}
-
 #ch-picture-text {
-    width: 60%;
+    width: 100%;
     height: 100%;
     background-image: url(Resources/banner-contact/cb1-kitchen-renovation.jpg);
     background-position: center;
@@ -2621,22 +2610,36 @@ footer > .page-container {
 }
 
 #ch-transparent-text {
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
-    padding: 64px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
     background: linear-gradient(55deg, hsla(240, 20%, 96%, 0.6) 60%, hsla(234, 100%, 29%, 0.7)),
                 linear-gradient(315deg, hsla(355, 100%, 56%, 0.8), hsla(355, 73%, 80%, 0.3));
 }
 
-#contact-page-form {
+#contact-hero {
+    box-sizing: content-box;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+}
+
+#ch-text {
+    width: 50%;
+}
+
+.contact-page-form {
     box-sizing: border-box;
     width: 40%;
     height: 100%;
+}
+
+#small-form {
+    display: none;
 }
 
 #contact-one > h5 {
@@ -2726,10 +2729,6 @@ footer > .page-container {
     #contact-hero {
         height: 650px;
     }
-
-    #ch-transparent-text {
-        padding: 16px;
-    }
     
     .cinfo-img {
         height: 62px;
@@ -2744,6 +2743,16 @@ footer > .page-container {
 }
 
 @media (max-width: 1440px){
+    #ch-text {
+        width: 40%;
+    }
+    
+    .contact-page-form {
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+    }
+
     #contact-info-row {
         gap: 32px;
     }
@@ -2751,29 +2760,36 @@ footer > .page-container {
 
 @media (max-width: 1024px){
     #contact-hero {
-        height: 1200px;
+        height: 600px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--middle-blue);
         padding: 0;
         padding-left: 0;
     }
 
-    #ch-picture-text,
-    #contact-page-form {
+    #ch-text {
+        height: 100%;
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-page-form {
         box-sizing: border-box;
         width: 100%;
-    }
-
-    #ch-picture-text {
-        height: 500px;
-    }
-
-    #contact-page-form {
         height: 700px;
+    }
+
+    #main-form {
+        display: none;
+    }
+
+    #small-form {
+        display: flex;
     }
     
     #contact-info-row {
@@ -2804,11 +2820,11 @@ footer > .page-container {
 
 @media (max-width: 768px){
     #contact-hero {
-        height: 1000px;
+        height: 500px;
     }
 
-    #ch-picture-text {
-        height: 400px;
+    #ch-text {
+        width: 600px;
     }
 
     #contac-page-form {
@@ -2822,6 +2838,10 @@ footer > .page-container {
 }
 
 @media (max-width: 600px){
+    #ch-text {
+        width: 425px;
+    }
+
     #contact-one h2 {
         text-align: left;
     }
@@ -2861,12 +2881,20 @@ footer > .page-container {
 }
 
 @media (max-width: 425px){
+    #ch-text {
+        width: 375px;
+    }
+
     #google-map {
         height: 400px;
     }
 }
 
 @media (max-width: 375px){
+    #ch-text {
+        width: 325px;
+    }
+
     #google-map {
         height: 300px;
     }
@@ -2898,7 +2926,9 @@ footer > .page-container {
 }
 
 @media (max-width: 320px){
-
+    #ch-text {
+        max-width: 100%;
+    }
 }
 
 /*Individual services pages*/
