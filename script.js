@@ -180,10 +180,12 @@ function galleryAppear(){
         const gcia = setInterval(gcImageAppear, 300);
     }
 
-    galleryButton.addEventListener("click", () => {
-        changeOne();
-        changeTwo();
-    })
+    if(galleryButton){
+        galleryButton.addEventListener("click", () => {
+            changeOne();
+            changeTwo();
+        })
+    }
 }
 
 if(document.body.id === "gallery-body"){
