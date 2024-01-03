@@ -51,6 +51,18 @@ table {
 }
 
 :root{
+    --ligt-blue: hsl(44, 9%, 97%);
+    --light-blue: hsl(34, 38%, 96%);
+    --dark-blue: #240008;
+    --strong-blue: #b20027;
+    --middle-blue: #6d6131;
+    --red: #e79f00;
+    --light-red: hsl(355, 73%, 80%);
+    --strong-red: #f9ac00;
+}
+
+/*
+:root{
     --light-blue: #F3F3F7;
     --dark-blue: #26283B;
     --strong-blue: hsl(234, 100%, 29%);
@@ -60,6 +72,7 @@ table {
     --strong-red: hsl(355, 100%, 56%);
     --roof-red: #C7535E;
 }
+*/
 
 ::-webkit-scrollbar {
     width: 16px;
@@ -198,25 +211,19 @@ nav {
     padding: 16px 0;
 }
 
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header .logo-container {
-    color: var(--roof-red);
+.picture-nav {
+    width: 100vw;
+    backdrop-filter: blur(30px);
+    background-color: hsla(44, 9%, 97%, 0.4);
 }
 
 #nav-logo {
-    height: 120px;
-    width: 150px;
-    background-image: url(Resources/Avey-logo-removebg-preview.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 50px;
+    width: 200px;
+    align-self: center;
 }
+
+
 
 .hamburger {
     background-color: var(--red);
@@ -804,13 +811,8 @@ footer > .page-container {
 }
 
 #footer-logo {
-    height: 160px;
-    width: 200px;
-    background-image: url(Resources/Avey-logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
+    height: 100px;
+    width: 400px;
 }
 
 .footer-group {
@@ -895,8 +897,8 @@ footer > .page-container {
     }
 
     #nav-logo {
-        height: 80px;
-        width: 100px;
+        height: 50px;
+        width: 200px;
     }
 
     #nav-links {
@@ -1103,8 +1105,8 @@ footer > .page-container {
     }
     
     #footer-logo {
-        height: 100px;
-        width: 125px;
+        height: 80px;
+        width: 320px;
         border-radius: 12px;
     }
     
@@ -1186,13 +1188,13 @@ footer > .page-container {
         display: block;
         position: absolute;
         right: 48px;
-        top: 40px;
+        top: 10px;
     }
 
     .hamburger.active {
         position: fixed;
         right: 48px;
-        top: 40px;
+        top: 10px;
         z-index: 21;
     }
 
@@ -1353,11 +1355,6 @@ footer > .page-container {
 
     footer > .page-container > a {
         align-self: center;
-    }
-
-    #footer-logo {
-        height: 140px;
-        width: 175px;
     }
 
     footer .logo-container h3 {
@@ -1571,7 +1568,7 @@ footer > .page-container {
 
     .is-block h4 {
         font-size: 20px;
-        padding: 8px 8px;
+        padding: 8px 8fpx;
     }
 
     #contact-text {
@@ -1651,6 +1648,15 @@ footer > .page-container {
 @media (max-width: 320px){
     .page-container {
         max-width: 100%;
+    }
+
+    .hamburger {
+        right: 10px;
+        top: 10px;
+    }
+
+    .hamburger.active {
+        right: 10px;
     }
 }
 
