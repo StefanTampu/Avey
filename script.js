@@ -23,18 +23,18 @@ const width = window.innerWidth;
         i++;
         if(width > 1024){
             if(i%2 === 1){
-                navCallNumber.style.color = "var(--dark-blue)";
+                navCallNumber.style.opacity = 1;
                 navCallNumber.style.transform = "translateY(0px)";
             } else {
-                navCallNumber.style.color = "var(--light-blue)";
+                navCallNumber.style.opacity = 0;
                 navCallNumber.style.transform = "translateY(-12px)";
             }
         } else {
             if(i%2 === 1){
-                navCallNumber.style.color = "var(--light-blue)";
+                navCallNumber.style.opacity = 1;
                 navCallNumber.style.transform = "translateX(0px)";
             } else {
-                navCallNumber.style.color = "var(--dark-blue)";
+                navCallNumber.style.opacity = 0;
                 navCallNumber.style.transform = "translateX(-178px)";
             }
         }
