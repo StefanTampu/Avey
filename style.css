@@ -211,8 +211,12 @@ nav {
     padding: 16px 0;
 }
 
+.picture-nav.page-container {
+    width: 100%;
+}
+
 .picture-nav {
-    width: 100vw;
+    width: 100%;
     backdrop-filter: blur(30px);
     background-color: hsla(44, 9%, 97%, 0.4);
 }
@@ -222,8 +226,6 @@ nav {
     width: 200px;
     align-self: center;
 }
-
-
 
 .hamburger {
     background-color: var(--red);
@@ -284,9 +286,10 @@ nav {
 
 #nav-call-number {
     transform: translateY(-35px);
-    color: var(--light-blue);
+    color: var(--dark-blue);
     z-index: 1;
     transition: 500ms ease-out;
+    opacity: 0;
 }
 
 /*Index.html*/
@@ -302,7 +305,6 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(Resources/banner-index/ib1-basement-finish.jpg);
-    overflow: hidden;
     transition: 800ms ease-in;
 }
 
@@ -1227,7 +1229,6 @@ footer > .page-container {
         right: 0;
         visibility: hidden;
         top: 0;
-        z-index: 20;
         box-shadow: -8px 0 16px 0 var(--middle-blue);
     }
 
@@ -1263,7 +1264,7 @@ footer > .page-container {
     
     #nav-call-number {
         transform: translate(-178px, 0px);
-        color: var(--dark-blue);
+        color: white;
         z-index: 1;
         transition: 500ms ease-out;
     }
