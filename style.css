@@ -2338,7 +2338,7 @@ footer > .page-container {
     padding: 0;
     backdrop-filter: blur(15px);
     background-color: hsla(234, 22%, 19%, 0.8);
-    z-index: 10;
+    z-index: 22;
     display: flex;
     align-items: center;
     justify-content: center;
