@@ -311,6 +311,12 @@ nav {
     transition: 800ms ease-in;
 }
 
+#index-picture-banner,
+#about-picture-banner,
+#ch-picture-text {
+    margin-bottom: 48px;
+}
+
 #index-transparent-banner {
     height: 100%;
     width: 100%;
@@ -1694,8 +1700,8 @@ footer > .page-container {
 #about-transparent-banner {
     height: 100%;
     width: 100%;
-    background: radial-gradient(ellipse at bottom, hsla(240, 20%, 96%, 0.2), hsla(234, 22%, 59%, 0.8)),
-                linear-gradient(hsla(355, 100%, 56%, 0.6), hsla(355, 73%, 80%, 0.2));
+    background: radial-gradient(ellipse at bottom, hsla(34, 38%, 96%, 0.2), hsla(41, 100%, 45%, 0.8)),
+                linear-gradient(hsla(347, 100%, 35%, 0.6), hsla(347, 100%, 7%, 0.7));
     padding-bottom: 50px;
 }
 
@@ -2621,8 +2627,8 @@ footer > .page-container {
 #ch-transparent-text {
     width: 100%;
     height: 100%;
-    background: linear-gradient(55deg, hsla(240, 20%, 96%, 0.6) 60%, hsla(234, 100%, 29%, 0.7)),
-                linear-gradient(315deg, hsla(355, 100%, 56%, 0.8), hsla(355, 73%, 80%, 0.3));
+    background: linear-gradient(315deg, hsla(240, 20%, 96%, 0.6) 60%, hsla(41, 100%, 49%, 0.7)),
+                linear-gradient(180deg, hsla(347, 100%, 27%, 0.8), hsla(347, 100%, 35%, 0.5));
 }
 
 #contact-hero {
@@ -2646,6 +2652,7 @@ footer > .page-container {
     width: 40%;
     height: 100%;
 }
+
 
 #small-form {
     display: none;
@@ -2779,6 +2786,10 @@ footer > .page-container {
         padding-left: 0;
     }
 
+    #ch-picture-text {
+        margin-bottom: 0px;
+    }
+
     #ch-text {
         height: 100%;
         width: 768px;
@@ -2799,6 +2810,7 @@ footer > .page-container {
 
     #small-form {
         display: flex;
+        margin-bottom: 48px;
     }
     
     #contact-info-row {
