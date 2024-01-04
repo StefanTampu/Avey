@@ -1245,7 +1245,7 @@ footer > .page-container {
         width: 0px;
         height: 100vh;
         overflow: hidden;
-        background-color: hsl(234, 22%, 19%);
+        background-color: hsl(347, 100%, 7%);
         transition: 700ms ease-in;
         flex-direction: column;
         justify-content: center;
@@ -1266,6 +1266,7 @@ footer > .page-container {
 
     .reg-nav {
         color: var(--light);
+        background-color: transparent;
         padding-left: 16px;
     }
     
@@ -1277,8 +1278,12 @@ footer > .page-container {
 
     #nav-call {
         white-space: nowrap;
-        background-color: var(--light);
-        color: var(--beige);
+        background-color: hsl(34, 38%, 82%);
+        color: var(--wine-red);
+    }
+
+    #nav-call:hover {
+        background-color: hsl(34, 38%, 92%);
     }
 
     #call-container {
