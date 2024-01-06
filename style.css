@@ -428,7 +428,7 @@ nav {
     width: 100%;
     background-color: var(--light);
     display: grid;
-    grid-template: repeat(2, 450px) / repeat(2, 1fr);
+    grid-template: repeat(2, 450px) 700px / repeat(2, 1fr);
     gap: 24px;
 }
 
@@ -446,6 +446,8 @@ nav {
     background-image: none;
     transition: 800ms ease-in;
     overflow: hidden;
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 #bathroom-is-block {
@@ -462,6 +464,11 @@ nav {
 
 #condo-is-block {
     background-color: var(--beige);
+}
+
+#threed-is-block {
+    grid-column: span 2;
+    background-image: url(Resources/3d-pictures/index-services-3d-modeling-comparison.png);
 }
 
 .is-block h4 {
@@ -968,7 +975,7 @@ footer > .page-container {
     }
 
     #index-services-grid {
-        grid-template: repeat(2, 300px) / repeat(2, 1fr);
+        grid-template: repeat(2, 300px) 525px / repeat(2, 1fr);
         gap: 16px;
     }
 
@@ -1339,7 +1346,7 @@ footer > .page-container {
     }
 
     #index-services-grid {
-        grid-template: repeat(2, 200px) / repeat(2, 1fr);
+        grid-template: repeat(2, 200px) 350px / repeat(2, 1fr);
     }
 
     .is-block h4 {
