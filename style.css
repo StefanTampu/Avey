@@ -51,12 +51,12 @@ table {
 }
 
 :root{
-    --light: hsl(34, 38%, 96%);
-    --beige: #e3d4c1;
+    --light: hsl(30, 40%, 96%);
+    --beige: hsl(34, 38%, 82%);
     --wine-red: hsl(347, 100%, 7%);
     --red: hsl(347, 100%, 35%);
     --light-red: hsl(347, 100%, 80%);
-    --olive: #6d6131;
+    --olive: hsl(48, 38%, 31%);
     --orange: hsl(41, 100%, 45%);
     --light-orange: hsl(41, 100%, 55%);
 }
