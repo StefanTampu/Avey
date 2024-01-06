@@ -361,12 +361,12 @@ nav {
 
 #index-one img {
     height: 600px;
-    width: 35%;
-    background-color: green;
+    aspect-ratio: 558/447;
+    background-color: var(--light);
 }
 
 #i1-text {
-    width: 60%;
+    flex: auto;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -961,7 +961,7 @@ footer > .page-container {
     }
 
     #index-one img {
-        height: 500px;
+        height: 400px;
     }
 
     #i1-text button {
@@ -1155,12 +1155,7 @@ footer > .page-container {
     }
 
     #index-one img {
-        height: 500px;
-        width: 45%;
-    }
-
-    #i1-text {
-        width: 50%;
+        height: 300px;
     }
 
     #reasons-container {
@@ -1313,12 +1308,10 @@ footer > .page-container {
     }
 
     #index-one img {
-        height: 300px;
-        width: 40%;
+        height: 200px;
     }
     
     #i1-text {
-        width: 55%;
         gap: 16px;
     }
 
@@ -1504,8 +1497,8 @@ footer > .page-container {
     }
     
     #index-one img {
-        height: 400px;
-        width: 95%;
+        height: 200px;
+        align-self: start;
     }
     
     #i1-text {
@@ -1602,7 +1595,7 @@ footer > .page-container {
     }
 
     #index-one img {
-        height: 300px;
+        height: 175px;
     }
 
     .is-block h4 {
