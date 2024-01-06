@@ -99,7 +99,7 @@ table {
 
 body {
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--light);
     color: var(--wine-red);
     display: flex;
