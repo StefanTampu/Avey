@@ -2063,7 +2063,7 @@ footer > .page-container {
 
 #services-list {
     display: grid;
-    grid-template: repeat(4, 450px) / repeat(5, 1fr);
+    grid-template: repeat(5, 450px) / repeat(5, 1fr);
     gap: 32px;
 }
 
