@@ -315,21 +315,62 @@ nav {
     padding: 0;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 #index-picture-banner {
     width: 100%;
-    background-position: center;
+/*    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(Resources/banner-index/ib1-basement-finish.jpg);
-    transition: 800ms ease-in;
+    transition: 800ms ease-in;*/
+    position: relative;
 }
 
 #index-picture-banner,
 #about-picture-banner,
 #ch-picture-text {
     margin-bottom: 48px;
+}
+
+.banner-img-background {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 800ms ease-in;
+}
+
+#bibi1 {
+    opacity: 1;
+    background-image: url(Resources/banner-index/ib1-basement-finish.jpg);
+}
+
+#bibi2 {
+    background-image: url(Resources/banner-index/ib2-bath-renovation.jpg);
+}
+
+#bibi3 {
+    background-image: url(Resources/banner-index/ib3-kitchen-renovation.jpg);
+}
+
+#bibi4 {
+    background-image: url(Resources/banner-index/ib4-bath-renovation.jpg);
+}
+
+#bibi5 {
+    background-image: url(Resources/banner-index/ib5-basement-finish.jpg);
+}
+
+#bibi6 {
+    background-image: url(Resources/banner-index/ib6-kitchen-renovation.jpg);
+}
+
+#bibi7 {
+    background-image: url(Resources/banner-index/ib7-bath-renovation.jpg);
 }
 
 #index-transparent-banner {
@@ -1243,6 +1284,7 @@ footer > .page-container {
         width: 100%;
         backdrop-filter: none;
         background-color: hsla(44, 9%, 97%, 0.4);
+        position: relative;
     }
 
     #nav-links {
@@ -1707,13 +1749,29 @@ footer > .page-container {
 }
 
 #about-picture-banner {
-    height: 100%;
     width: 100%;
+    position: relative;
+}
+
+#biba1 {
     background-image: url(Resources/banner-about/ab1-bath-renovation.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 800ms ease-in;
+    opacity: 1;
+}
+
+#biba2 {
+    background-image: url(Resources/banner-about/ab2-kitchen-renovation.jpg);
+}
+
+#biba3 {
+    background-image: url(Resources/banner-about/ab3-bath-renovation.jpg);
+}
+
+#biba4 {
+    background-image: url(Resources/banner-about/ab4-basement-finish.jpg);
+}
+
+#biba5 {
+    background-image: url(Resources/banner-about/ab5-bath-renovation.jpg);
 }
 
 #about-transparent-banner {
@@ -1722,6 +1780,7 @@ footer > .page-container {
     background: radial-gradient(ellipse at bottom, hsla(34, 38%, 96%, 0.2), hsla(41, 100%, 45%, 0.8)),
                 linear-gradient(hsla(347, 100%, 35%, 0.6), hsla(347, 100%, 7%, 0.7));
     padding-bottom: 50px;
+    position: relative;
 }
 
 #abanner-headings {
@@ -2644,6 +2703,20 @@ footer > .page-container {
     background-repeat: no-repeat;
     background-size: cover;
     transition: 800ms ease-in;
+    position: relative;
+}
+
+#bibc1 {
+    opacity: 1;
+    background-image: url(Resources/banner-contact/cb1-kitchen-renovation.jpg);
+}
+
+#bibc2 {
+    background-image: url(Resources/banner-contact/cb2-basement-finish.jpg);
+}
+
+#bibc3 {
+    background-image: url(Resources/banner-contact/cb3-bath-renovation.jpg);
 }
 
 #ch-transparent-text {
@@ -2651,6 +2724,7 @@ footer > .page-container {
     height: 100%;
     background: linear-gradient(315deg, hsla(240, 20%, 96%, 0.6) 60%, hsla(41, 100%, 49%, 0.7)),
                 linear-gradient(180deg, hsla(347, 100%, 27%, 0.8), hsla(347, 100%, 35%, 0.5));
+    position: relative;
 }
 
 #contact-hero {
