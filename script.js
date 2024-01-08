@@ -74,31 +74,26 @@ const aboutPictureBanner = document.getElementById("about-picture-banner");
 const contactPictureBanner = document.getElementById("ch-picture-text");
 
 function bannerLooping(){
-    const indexPictures = ["ib1-basement-finish", "ib2-bath-renovation", "ib3-kitchen-renovation", "ib4-bath-renovation", "ib5-basement-finish", "ib6-kitchen-renovation", "ib7-bath-renovation"];
-    const aboutPictures = ["ab1-bath-renovation", "ab2-kitchen-renovation", "ab3-bath-renovation", "ab4-basement-finish", "ab5-bath-renovation"];
-    const contactPictures = ["cb1-kitchen-renovation", "cb2-basement-finish", "cb3-bath-renovation"];
-
+    const bibs = document.getElementsByClassName("banner-img-background");
     let a = 0;
 
     setInterval(function(){
-        if(indexPictureBanner){
+        if(indexPictureBanner || aboutPictureBanner || contactPictureBanner){
             a++;
-            let b = a%indexPictures.length;
-            indexPictureBanner.style.backgroundImage = `url(Resources/banner-index/${indexPictures[b]}.jpg)`;
-        } else if (aboutPictureBanner){
-            a++;
-            let b = a%aboutPictures.length;
-            aboutPictureBanner.style.backgroundImage = `url(Resources/banner-about/${aboutPictures[b]}.jpg)`;
-        } else if (contactPictureBanner){
-            a++;
-            let b = a%contactPictures.length;
-            contactPictureBanner.style.backgroundImage = `url(Resources/banner-contact/${contactPictures[b]}.jpg)`;
+            if (a === bibs.length){
+                a = 0;
+            }
+            bibs[a].style.opacity = 1;
+            if (a >= 1){
+                bibs[a-1].style.opacity = 0;
+            } else {
+                bibs[bibs.length - 1].style.opacity = 0;
+            }
         }
     }, 3000);
 }
 
 bannerLooping();
-
 
 //Picture containers loops
 
