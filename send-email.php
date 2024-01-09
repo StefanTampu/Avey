@@ -1,7 +1,7 @@
 <?php
 
 $errors = '';
-$myemail = 'stefan_tampu@yahoo.com';
+$myemail = 'info@aveyconstruction.ca';
 if (empty($_POST['first-name']) ||
     empty($_POST['last-name']) ||
     empty($_POST['email']) ||
