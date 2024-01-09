@@ -1,15 +1,40 @@
 <?php
 
-$fName = $_POST["f-name"];
-$lName = $_POST["l-name"];
+$errors = '';
+$myemail = 'stefan_tampu@yahoo.com';
+if (empty($_POST['first-name']) ||
+    empty($_POST['last-name']) ||
+    empty($_POST['email']) ||
+    empty($_POST['phone']) ||
+    empty($_POST['location']) ||
+    empty($_POST['subject']) || 
+    empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
+}
+
+$fName = $_POST["first-name"];
+$lName = $_POST["last-name"];
 $email = $_POST["email"];
-$subject = $_POST["email-subject"];
+$phone = $_POST["phone"];
+$location = $_POST["location"];
+$subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$mailheaders = "From:".$fName.$lName."<".$email.">\r\n";
-$recipient = "stefan_tampu@yahoo.com";
+if (!preg_match(
+    "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
+    $email))
+{
+    $errors .= "\n Error: Invalid email address";
+}
 
-mail($recipient, $subject, $message, $mailheaders)
+$email_body = "You have received a new message. ".
+" Here are the details:\n Name: $name \n ".
+"Email: $email\n Phone: $_phone\n Location: $_location\n  Message:\n $message";
+
+$mailheader = "From: $email\n";
+
+mail($myemail, $subject, $email_body, $mailheader)
 or die("Error!");
 
 echo"Message sent";
