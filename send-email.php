@@ -28,9 +28,9 @@ if (!preg_match(
     $errors .= "\n Error: Invalid email address";
 }
 
-$email_body = "You have received a new message. ".
-" Here are the details:\n Name: $name \n ".
-"Email: $email\n Phone: $_phone\n Location: $_location\n  Message:\n $message";
+$email_body = "$fName $lName just submitted a contact form through the Avey website.".
+" Here are the details:\n Name: $fName $lName \n ".
+"Email: $email\n Phone: $phone\n Location: $location\n Message:\n $message";
 
 $mailheader = "From: $email\n";
 
