@@ -436,9 +436,10 @@ nav {
 
 .reason {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: start;
     padding: 16px;
+    gap: 16px;
 }
 
 .reason-text h4 {
@@ -450,12 +451,12 @@ nav {
 }
 
 .reason-img {
-    width: 12%;
+    width: 8%;
     aspect-ratio: 1/1;
 }
 
 .reason-text {
-    width: 85%;
+    width: 90%;
 }
 
 #index-three {
@@ -1375,17 +1376,9 @@ footer > .page-container {
         grid-template: repeat(3, 150px) / repeat(2, 1fr);
         gap: 24px;
     }
-    
-    .reason-img {
-        width: 10%;
-    }
-    
-    .reason-text {
-        width: 85%;
-    }
 
     .reason {
-        gap: 8px;
+        gap: 16px;
         padding: 8px;
     }
 
@@ -1566,7 +1559,6 @@ footer > .page-container {
     
     .reason {
         display: flex;
-        justify-content: space-between;
         gap: 16px;
         padding: 16px;
     }
