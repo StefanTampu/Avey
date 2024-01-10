@@ -789,6 +789,7 @@ nav {
     opacity: 0;
     transform: translateX(-15px);
     transition: 1s ease;
+    text-align: left;
 }
 
 #hint-button {
