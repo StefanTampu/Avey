@@ -642,8 +642,8 @@ nav {
     height: 450px;
     width: 400px;
     background-color: var(--beige);
-    border-radius: 0 0 32px 32px;
-    border-top: 24px double var(--orange);
+    border-radius: 32px;
+    border-top: 24px solid var(--orange);
     box-shadow: 8px 8px 8px 0 var(--olive);
     transition: 700ms ease;
 }
@@ -962,9 +962,13 @@ footer > .page-container {
     }
 
     button {
-        font-size: 16px;
+        font-size: 20px;
         padding: 6px 16px;
         border-radius: 16px;
+    }
+
+    header button {
+        font-size: 16px;
     }
     
     button:hover {
