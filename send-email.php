@@ -37,7 +37,7 @@ $mailheader = "From: $email\n";
 mail($myemail, $subject, $email_body, $mailheader)
 or die("Error!");
 
-echo `
+echo '
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,11 +47,7 @@ echo `
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Resources/Avey-logo-page-icon.png">
 </head>
-<body id="gallery-body">
-    <div id="gallery-img-display">
-        <button id="gid-exit">X</button>
-        <img id="gallery-img-popped" src="Resources/gallery-container/basement-finish-101.jpg" alt="">
-    </div>
+<body>
     <header>
         <nav class="page-container">
             <a href="index.html">
@@ -76,8 +72,8 @@ echo `
         </nav>
     </header>
     <main class="page-container">
-        <h2>Message sent</h2>
-        <h1>Thank you for contacting us! We will get back to you as soon as possible.</h1>
+        <h1>Message Sent</h1>
+        <h3>Thank you for contacting us. We will get back to you as soon as possible.</h3>
     </main>
     <footer>
         <div class="page-container">
@@ -124,6 +120,7 @@ echo `
 </body>
 <script src="script.js"></script>
 </html> 
-`;
+';
+
 
 ?>
