@@ -90,7 +90,7 @@ function bannerLooping(){
                 bibs[bibs.length - 1].style.opacity = 0;
             }
         }
-    }, 3000);
+    }, 6000);
 }
 
 bannerLooping();
