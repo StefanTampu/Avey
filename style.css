@@ -1783,7 +1783,7 @@ footer > .page-container {
     font-size: 40px;
 }
 
-#about-one {
+#about-description {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -1893,14 +1893,14 @@ footer > .page-container {
         width: 35%;
     }
 
-    #about-one {
+    #about-description {
         align-items: center;
         justify-content: center;
-        gap: 12px;
+        gap: 0px;
     }
 
     #about-pictures {
-        transform: scaleX(-1);
+        transform: scaleX(-1) translateX(60px)
     }
 }
 
@@ -1935,7 +1935,7 @@ footer > .page-container {
         align-self: flex-end;
     }
 
-    #about-one {
+    #about-description {
         flex-direction: column;
     }
 
@@ -1951,8 +1951,6 @@ footer > .page-container {
     #about-pictures {
         height: 100%;
         width: 40%;
-        display: flex;
-        align-items: center;
         justify-content: center;
         margin-top: 64px;
     }
@@ -1966,7 +1964,7 @@ footer > .page-container {
     }
 
     #about-warranty {
-        margin-bottom: 0;
+        margin-bottom: 32px;
     }
 }
 
@@ -1993,7 +1991,7 @@ footer > .page-container {
         font-size: 20px;
     }
 
-    #about-one {
+    #about-description {
         gap: 80px;
     }
 
