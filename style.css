@@ -152,8 +152,8 @@ li {
 #index-h3,
 #abanner-h1,
 #abanner-h5,
-#ch-picture-text h1,
-#ch-picture-text h3,
+#ch-picture-banner h1,
+#ch-picture-banner h3,
 #contact-text h2,
 #contact-text h3,
 .cinfo-text h3 {
@@ -311,7 +311,7 @@ nav {
 
 #index-picture-banner,
 #about-picture-banner,
-#ch-picture-text {
+#ch-picture-banner {
     margin-bottom: 48px;
 }
 
@@ -2669,7 +2669,7 @@ footer > .page-container {
 
 /*Contact.html*/
 
-#ch-picture-text {
+#ch-picture-banner {
     width: 100%;
     height: 100%;
     background-image: url(Resources/banner-contact/cb1-kitchen-renovation.jpg);
@@ -2693,7 +2693,7 @@ footer > .page-container {
     background-image: url(Resources/banner-contact/cb3-bath-renovation.jpg);
 }
 
-#ch-transparent-text {
+#ch-transparent-banner {
     width: 100%;
     height: 100%;
     background: linear-gradient(315deg, hsla(240, 20%, 96%, 0.6) 60%, hsla(41, 100%, 49%, 0.7)),
@@ -2857,7 +2857,7 @@ footer > .page-container {
         padding-left: 0;
     }
 
-    #ch-picture-text {
+    #ch-picture-banner {
         margin-bottom: 0px;
     }
 
