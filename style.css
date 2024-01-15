@@ -2889,10 +2889,7 @@ footer > .page-container {
     }
 
     #locations-grid {
-        display: grid;
         grid-template: repeat(4, 64px) / repeat(7, 1fr);
-        align-items: center;
-        justify-items: center;
     }
     
     .location-block {
@@ -2944,7 +2941,6 @@ footer > .page-container {
     }
 
     #contact-info-row {
-        display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: space-evenly;
@@ -2957,10 +2953,7 @@ footer > .page-container {
     }
 
     #locations-grid {
-        display: grid;
         grid-template: repeat(6, 64px) / repeat(5, 1fr);
-        align-items: center;
-        justify-items: center;
     }
 
     .il-1 {
