@@ -2266,12 +2266,12 @@ footer > .page-container {
     width: 100%;
 }
 
-#gallery-two {
+#gallery-images-section {
     margin-top: 100px;  
     position: relative;
 }
 
-#gallery-two > #pictures-container {
+#gallery-images-section > #pictures-container {
     grid-template: repeat(2, 400px) / repeat(2, 400px);
     transition: 500ms ease;
     position: absolute;
@@ -2280,7 +2280,7 @@ footer > .page-container {
     right: 0;
 }
 
-#gallery-two .picture {
+#gallery-images-section .picture {
     height: 400px;
     width: 400px;
 }
@@ -2453,15 +2453,15 @@ footer > .page-container {
         height: 80vh;
     }
 
-    #gallery-two {
+    #gallery-images-section {
         margin-top: none;  
     }
 
-    #gallery-two > #pictures-container {
+    #gallery-images-section > #pictures-container {
         grid-template: repeat(2, 300px) / repeat(2, 300px);
     }
     
-    #gallery-two .picture {
+    #gallery-images-section .picture {
         height: 300px;
         width: 300px;
     }
@@ -2541,11 +2541,11 @@ footer > .page-container {
 }
 
 @media (max-width: 1024px){
-    #gallery-two > #pictures-container {
+    #gallery-images-section > #pictures-container {
         grid-template: repeat(2, 200px) / repeat(2, 200px);
     }
 
-    #gallery-two .picture {
+    #gallery-images-section .picture {
         height: 200px;
         width: 200px;
     }
@@ -2563,7 +2563,7 @@ footer > .page-container {
     }
 
     .gallery-contact {
-        margin-top: 400px;
+        margin-top: 432px;
     }
 
     .gallery-contact-active {
@@ -2607,7 +2607,7 @@ footer > .page-container {
     }
 
     .gallery-contact {
-        margin-top: 500px;
+        margin-top: 632px;
     }
 
     .gallery-contact-active {
@@ -2616,11 +2616,11 @@ footer > .page-container {
 }
 
 @media (max-width: 425px){
-    #gallery-two > #pictures-container {
+    #gallery-images-section > #pictures-container {
         grid-template: repeat(2, 150px) / repeat(2, 150px);
     }
 
-    #gallery-two .picture {
+    #gallery-images-section .picture {
         height: 150px;
         width: 150px;
     }
@@ -2644,14 +2644,18 @@ footer > .page-container {
     #gallery-img-popped {
         height: 320px;
     }
+
+    .gallery-contact {
+        margin-top: 560px;
+    }
 }
 
 @media (max-width: 320px){
-    #gallery-two > #pictures-container {
+    #gallery-images-section > #pictures-container {
         grid-template: repeat(2, 125px) / repeat(2, 125px);
     }
 
-    #gallery-two .picture {
+    #gallery-images-section .picture {
         height: 125px;
         width: 125px;
     }
