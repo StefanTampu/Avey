@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Quattrocento:wght@400;700&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -112,40 +112,50 @@ h1 {
     font-weight: 700;
     text-align: center;
     margin-bottom: 32px;
-    font-family: "Quatrocento", serif;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
 }
 
 h2 {
     font-size: 56px;
     margin-bottom: 8px;
     text-align: center;
-    font-family: "Quatrocento", serif;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
 }
 
 h3 {
     font-size: 42px;
     font-weight: 800;
     text-align: center;
-    font-family: 'Fanwood Text', serif;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
 }
 
 h4 {
     font-size: 34px;
     font-weight: 700;
     font-family: 'Fanwood Text', serif;
-    margin-bottom: 8px;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
 }
 
 h5 {
     font-size: 34px;
     font-weight: 600;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+
+p {
+    font-size: 34px;
     font-family: 'Fanwood Text', serif;
 }
 
-p,
 li {
     font-size: 34px;
-    font-family: 'Fanwood Text', serif;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
 }
 
 #index-h1,
@@ -179,7 +189,8 @@ button {
     border: none;
     cursor: pointer;
     transition: 200ms ease-out;
-    font-family: 'Fanwood Text', serif;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-optical-sizing: auto;
 }
 
 button:hover {
