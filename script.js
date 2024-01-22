@@ -63,6 +63,7 @@ if(hintButton){
     hintButton.addEventListener("mousedown", () => {
         contactDiv.style.opacity = 1;
         contactDiv.style.transform = "translateY(0px)";
+        contactDiv.style.visibility = "visible";
         hintButton.classList.remove("hint-hover");
     })
 }
