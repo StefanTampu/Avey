@@ -502,7 +502,7 @@ nav {
 }
 
 #condo-is-block {
-    background-color: var(--beige);
+    background-image: url(Resources/services-pictures/condo-renovation-service.jpg);
 }
 
 #threed-is-block {
@@ -2173,19 +2173,6 @@ footer > .page-container {
     border: 16px outset var(--beige);
 }
 
-#service-empty {
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    background-color: var(--beige);
-    border: 16px outset var(--beige);
-    grid-column: span 2;
-    color: var(--light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #services h5 {
     color: var(--red);
     font-size: 40px;
@@ -2201,7 +2188,7 @@ footer > .page-container {
 
 @media (max-width: 2560px){
     #services-list {
-        grid-template: repeat(4, 330px) / repeat(5, 1fr);
+        grid-template: repeat(5, 330px) / repeat(5, 1fr);
         gap: 16px;
     }
 
@@ -2211,10 +2198,6 @@ footer > .page-container {
     }
 
     #services-list img {
-        border: 8px outset var(--beige);
-    }
-
-    #service-empty {
         border: 8px outset var(--beige);
     }
 
@@ -2229,13 +2212,13 @@ footer > .page-container {
 
 @media (max-width: 1440px){
     #services-list {
-        grid-template: repeat(4, 400px) / repeat(5, 1fr);
+        grid-template: repeat(5, 400px) / repeat(5, 1fr);
     }
 }
 
 @media (max-width: 1024px){
     #services-list {
-        grid-template-rows: repeat(4, 550px);
+        grid-template-rows: repeat(5, 550px);
     }
 
     .sl-text {
@@ -2245,7 +2228,7 @@ footer > .page-container {
 
 @media (max-width: 768px){
     #services-list {
-        grid-template-rows: 300px 200px repeat(2, 300px) 200px 300px;
+        grid-template-rows: 300px 200px repeat(2, 300px) 200px repeat(2, 300px) 250px;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -2256,9 +2239,9 @@ footer > .page-container {
     #services-list img {
         grid-column: span 1;
     }
-
-    #service-empty {
-        display: none;
+    
+    #creno-img {
+        grid-column: span 2;
     }
 
     .sl-text {
@@ -2268,7 +2251,7 @@ footer > .page-container {
 
 @media (max-width: 600px){
     #services-list {
-        grid-template-rows: 360px 200px repeat(2, 360px) 200px 360px;
+        grid-template-rows: 360px 200px repeat(2, 360px) 200px repeat(2, 360px) 280px;
         grid-template-columns: repeat(2, 1fr);
     }
 }
